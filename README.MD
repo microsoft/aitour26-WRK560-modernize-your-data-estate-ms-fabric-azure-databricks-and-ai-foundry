@@ -56,7 +56,7 @@ Delete this line and everything above it!
 
 # [Microsoft AI Tour 2026](https://aitour.microsoft.com)
 
-## 🔥BRKXXX: SESSIONNAME
+## 🔥BRKXXX: Modernize your data estate MS Fabric, Azure Databricks, and AI Foundry
 
 If you will be delivering this session, check the [session-delivery-sources](./session-delivery-resources/) folder for slides, scripts, and other resources.
 
