@@ -65,13 +65,13 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 3. In the pop-up window, under **External sources**, select the **Azure Data Lake Storage Gen2** source.
 
-    ![task-1.3-ext-shortcut-4.png](media/task-1.3-ext-shortcut-4.png)
+    ![Screenshot showing the selection of Azure Data Lake Storage Gen2 as the external source.](media/adls-gen2-source.png)
 
 4. On the pop-up window, select **Create new connection**.
 
 5. In the screen below, we need to enter the connection details for the **ADLS Gen2** shortcut.
 
-    ![task-1.3-ext-shortcut11.png](media/task-1.3-ext-shortcut11.png)
+    ![Screenshot showing the connection details for the ADLS Gen2 shortcut.](media/adls-gen2-connection.png)
 
 6. Enter the following connection details:
    - **URL**: +++https://stignite@lab.LabInstance.Id.dfs.core.windows.net/+++
@@ -80,19 +80,19 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 7. Then select **Next**.
 
-    ![task-1.3-ext-shortcut12.png](media/task-1.3-ext-shortcut12.png)
+    ![Screenshot showing filled in connection details for the ADLS Gen2 shortcut.](media/adls-gen2-connection-filled.png)
 
 8.  Select the **data** and **litwaredata** checkbox and then click on the **Next** button.
 
-    ![task-wb6.png](media/task-wb6.png)
+    ![Screenshot showing the selection of data and litwaredata checkboxes.](media/litwaredata-checkboxes.png)
 
 9. Click on the **Create** button.
 
-    ![task-1.3-ext-shortcut10.png](media/task-1.3-ext-shortcut10.png)
+    ![Screenshot showing the creation of the ADLS Gen2 shortcut.](media/adls-gen2-creation.png)
 
 10. And there you go! Your shortcut is now ready! Click (do not expand) on the newly created shortcut named **litwaredata**.
 
-    ![64.1.png](media/64.1.png)
+    ![Screenshot showing the newly created shortcut named litwaredata.](media/new-shortcut-created.png)
 
 Prior to Microsoft Fabric, departments at Zava had to move the data they needed from other departments via time-consuming ETL processes. But look, now they have created shortcuts. No need to move any of this data. That is the power of OneLake!
 
@@ -102,47 +102,33 @@ Prior to Microsoft Fabric, departments at Zava had to move the data they needed 
 
 Now, let’s see how Data Engineer, Bryan, got the remaining data into OneLake by creating Delta tables using Spark Notebook. By using a Spark Notebook to create Delta tables, Bryan can ensure more reliable, scalable, and efficient data management, which is essential for handling big data workflows.
 
-1. Select the **ZavaWorkspace_@LabInstance.Id** workspace from the left navigation pane and select **New Item**.
+1. Inside the **ZavaLakehouse**, select **Open Notebook** then choose **New Notebook**.
 
-    ![Screenshot showing how to create a new item in Real-Time Intelligence.](media/create-new-item.png)
+    ![Screenshot showing how to create a new notebook in Real-Time Intelligence.](media/create-new-notebook.png)
 
-2. In the **New Item** tab, search for **Notebook** and select **Notebook**. If a pop-up appears, select **Skip tour**.
+2. Once the notebook is created, paste the **below code** in the existing cell and run the cell by clicking on the **Run cell** icon.
 
-    ![Screenshot showing how to create a new Notebook in Real-Time Intelligence.](media/create-notebook.png)
+    ```python
+    import os
+    import pandas as pd
+     
+    # List all CSV files in the 'litwaredata' folder
+    file_path = '/lakehouse/default/Files/litwaredata/'
+    csv_files = [file for file in os.listdir(file_path) if file.endswith('.csv')]
+     
+    # Load each CSV file into a table
+    for file in csv_files:
+        table_name = file.split('.')[0]
+        df = pd.read_csv(file_path + file)
+        spark.createDataFrame(df).write.mode("ignore").format("delta").saveAsTable(table_name)
+    ```
 
-3. Inside the **Notebook**, select the **+ Data Sources** button and select **Lakehouses**.
+    ![Screenshot showing the code cell to create Delta tables in a Notebook](media/create-delta-tables-code-cell.png)
 
-    ![Screenshot showing how to add a data source in Real-Time Intelligence.](media/add-data-source.png)
+3. Once the code cell runs successfully, you will see a green tick at the bottom of the cell. Now, expand the **Tables** section, expand **dbo**, select on the **three dots** and the select **Refresh**. You should see the newly created Delta tables listed here.
 
-4. Select the **ZavaLakehouse** and then click **Connect**.
+    ![Screenshot showing the refreshed Delta tables in the Tables section](media/refresh-delta-tables.png)
 
-    ![Screenshot showing how to connect to a Lakehouse in Real-Time Intelligence.](media/connect-lakehouse.png)
+4. You now have all the tables in **OneLake** for Zava to leverage.
 
-5. Once the notebook is created, paste the **below code** in the existing cell and run the cell by clicking on the **Run cell** icon.
-
-```
-import os
-import pandas as pd
- 
-# List all CSV files in the 'litwaredata' folder
-file_path = '/lakehouse/default/Files/litwaredata/'
-csv_files = [file for file in os.listdir(file_path) if file.endswith('.csv')]
- 
-# Load each CSV file into a table
-for file in csv_files:
-    table_name = file.split('.')[0]
-    df = pd.read_csv(file_path + file)
-    spark.createDataFrame(df).write.mode("ignore").format("delta").saveAsTable(table_name)
-```
-
-![Screenshot showing the code used to create Delta tables in Real-Time Intelligence.](media/task-1.3-ext-shortcut12.png)
-
-6. Once the execution is successful, you'll see a **green tick** at bottom of the cell. Now, click on **Stop** icon in the ribbon at the top to **stop the Spark session**, then click on **ZavaLakehouse**
-
-    ![64.9.png](media/64.9.png)
-
-7. Expand the **Tables** section, expand **dbo**, select on the **three dots** and the select **Refresh**. You should see the newly created Delta tables listed here.
-
-    ![64.10.png](media/64.10.png)
-
-8. You now have all the tables in **OneLake** for Zava to leverage.
+    ![Screenshot showing the tables in OneLake for Zava to leverage](media/tables-in-onelake.png)
