@@ -11,27 +11,27 @@ Delta Live Tables (DLT) allow you to build and manage reliable data pipelines th
 
 2. Click on the **Sign in with Microsoft Entra ID**.
 
-    ![Screenshot showing the sign in with Microsoft Entra ID option in Azure Databricks](media/databricks-signin.png)
+    ![Screenshot showing the sign in with Microsoft Entra ID option in Azure Databricks](/lab/media/databricks-signin.png)
 
 3. On the left navigation pane, select **Jobs and pipelines**.
 
 4. Select the **Create** dropdown and choose **ETL Pipeline**.
 
-    ![Screenshot showing the create ETL pipeline option in Azure Databricks](media/databricks-createetl.png)
+    ![Screenshot showing the create ETL pipeline option in Azure Databricks](/lab/media/databricks-createetl.png)
 
 5. In the **Create ETL Pipeline** page, provide a name for your pipeline as +++**DLT_Pipeline**+++, scroll down to **Paths** and select the folder icon to browse the notebook.
 
-    ![Screenshot showing the create ETL pipeline page in Azure Databricks](media/databricks-etl-details.png)
+    ![Screenshot showing the create ETL pipeline page in Azure Databricks](/lab/media/databricks-etl-details.png)
 
 6. In the **Select file** dialog, select **Shared**, select **01 DLT Notebook** and then click on the **Select** button.
 
-    ![Screenshot showing the selection of the 01 DLT Notebook in Azure Databricks](media/databricks-select-file.png)
+    ![Screenshot showing the selection of the 01 DLT Notebook in Azure Databricks](/lab/media/databricks-select-file.png)
 
 7. In the **Destination** section, enter +++**dbo**+++ as the **Default Schema** then select **Create**.
 
 8. Select **Start** to begin the pipeline execution. Once the execution is completed, you will see a result similar to the following:
 
-    ![Screenshot showing the DLT pipeline execution result in Azure Databricks](media/databricks-dlt-result.png)
+    ![Screenshot showing the DLT pipeline execution result in Azure Databricks](/lab/media/databricks-dlt-result.png)
 
 This beautiful lineage view showing the Medallion Architecture is a data design pattern commonly used in Databricks to organize and optimize data processing workflows in a lakehouse architecture. It structures data into three logical layers—Bronze, Silver, and Gold—ensuring data quality, accessibility, and scalability for analytics and machine learning.
 
@@ -45,11 +45,11 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
 2. Select your **ZavaWorkspace_@lab.LabInstance.Id** workspace from the left navigation pane, and the select **+ New item** from the menu bar.
 
-    ![Screenshot showing the new item option in Microsoft Fabric](media/fabric-new-item.png)
+    ![Screenshot showing the new item option in Microsoft Fabric](/lab/media/create-new-item.png)
 
 3. In the **New item** dialog, select **Mirrored Azure Databricks catalog (preview)** or search for it on the search bar.
 
-    ![Screenshot showing the selection of Mirrored Azure Databricks catalog in Microsoft Fabric](media/fabric-mirrored-catalog.png)
+    ![Screenshot showing the selection of Mirrored Azure Databricks catalog in Microsoft Fabric](/lab/media/fabric-mirrored-catalog.png)
 
 4. When the **New Source** dialog appears, select the **New Connection** radio button.
 
@@ -64,21 +64,21 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
 6. Select **Connect** then select **Next**.
 
-    ![Screenshot showing the connection details for the Mirrored Azure Databricks catalog in Microsoft Fabric](media/fabric-connect.png)
+    ![Screenshot showing the connection details for the Mirrored Azure Databricks catalog in Microsoft Fabric](/lab/media/fabric-connect.png)
 
 7. In the **Choose data** screen, select the Catalog name as **litware_unity_catalog** from the dropdown box, and ensure **default** and **rag** schemas are selected. Select **Next** and then select **Create**.
 
-    ![Screenshot showing the selection of catalog and schemas in Microsoft Fabric](media/fabric-choose-catalog.png)
+    ![Screenshot showing the selection of catalog and schemas in Microsoft Fabric](/lab/media/fabric-choose-catalog.png)
 
 8. On the toolbar, select **Monitor catalog** to track the progress of the mirroring process. Wait for mirroring to complete.
 
 9. On the toolbar, to the left of the **Share** button, select the dropdown list and then select **SQL analytics endpoint**.
 
-    ![Screenshot showing the SQL analytics endpoint option in Microsoft Fabric](media/fabric-monitor-catalog.png)
+    ![Screenshot showing the SQL analytics endpoint option in Microsoft Fabric](/lab/media/fabric-monitor-catalog.png)
 
 10. On the toolbar, select **Refresh**. In the Explorer pane, in the **Schemas** section, expand **rag** and then expand **Tables**. You can view the Mirrored Azure Databricks catalog tables data here.
 
-    ![Screenshot showing the Explorer pane with the expanded schemas and tables in Microsoft Fabric](media/fabric-explorer-pane.png)
+    ![Screenshot showing the Explorer pane with the expanded schemas and tables in Microsoft Fabric](/lab/media/fabric-explorer-pane.png)
 
 11. Click on **New SQL Query**, then copy and paste the following **SQL query** in query editor and click on **Run** button.
 

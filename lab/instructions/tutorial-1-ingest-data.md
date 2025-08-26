@@ -23,11 +23,11 @@ In this exercise, you will act as the Data Engineer, Bryan, to transfer Zava's d
 
 5. Select **Workspaces** from the left navigation pane. Then select **+ New workspace**.
 
-    ![Screenshot showing how to create a new workspace in Real-Time Intelligence.](media/create-new-workspace.png)
+    ![Screenshot showing how to create a new workspace in Real-Time Intelligence.](/lab/media/create-new-workspace.png)
 
 6. Enter a name for the workspace, such as +++**ZavaWorkspace_@lab.LabInstance.Id**+++. Expand the **Advanced** option and make sure **Fabric Capacity** is selected then select **Apply** when done.
 
-    ![Screenshot showing how to create a new workspace in Real-Time Intelligence.](media/create-workspace-side-pane.png)
+    ![Screenshot showing how to create a new workspace in Real-Time Intelligence.](/lab/media/create-workspace-side-pane.png)
 
 > **Note**: The workspace name must be unique across the Fabric tenant. If you receive an error, try a different name. Close any pop-up dialogs that appear on the screen.
 
@@ -37,11 +37,11 @@ Now, let's see how each department can easily create a Lakehouse in the Zava wor
 
 1. In the Zava workspace you created, select **+ New Item** from the top menu.
 
-    ![Screenshot showing how to create a new item in Real-Time Intelligence.](media/create-new-item.png)
+    ![Screenshot showing how to create a new item in Real-Time Intelligence.](/lab/media/create-new-item.png)
 
 2. In the **New Item** pane, search for **Lakehouse** and select **Lakehouse**.
 
-    ![Screenshot showing how to create a new Lakehouse in Real-Time Intelligence.](media/create-lakehouse.png)
+    ![Screenshot showing how to create a new Lakehouse in Real-Time Intelligence.](/lab/media/create-lakehouse.png)
 
 3. Enter a name for the Lakehouse, such as +++**ZavaLakehouse**+++.
 
@@ -61,17 +61,17 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 > **Note:** Make sure you create a shortcut under **Files** and not under **tables** in the lakehouse explorer pane.
 
-    ![Screenshot showing how to create a new shortcut in Real-Time Intelligence.](media/create-new-shortcut.png)
+![Screenshot showing how to create a new shortcut in a Lakehouse.](/lab/media/create-new-shortcut.png)
 
 3. In the pop-up window, under **External sources**, select the **Azure Data Lake Storage Gen2** source.
 
-    ![Screenshot showing the selection of Azure Data Lake Storage Gen2 as the external source.](media/adls-gen2-source.png)
+    ![Screenshot showing the selection of Azure Data Lake Storage Gen2 as the external source.](/lab/media/adls-gen2-source.png)
 
 4. On the pop-up window, select **Create new connection**.
 
 5. In the screen below, we need to enter the connection details for the **ADLS Gen2** shortcut.
 
-    ![Screenshot showing the connection details for the ADLS Gen2 shortcut.](media/adls-gen2-connection.png)
+    ![Screenshot showing the connection details for the ADLS Gen2 shortcut.](/lab/media/adls-gen2-connection.png)
 
 6. Enter the following connection details:
    - **URL**: +++https://stignite@lab.LabInstance.Id.dfs.core.windows.net/+++
@@ -80,19 +80,19 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
 7. Then select **Next**.
 
-    ![Screenshot showing filled in connection details for the ADLS Gen2 shortcut.](media/adls-gen2-connection-filled.png)
+    ![Screenshot showing filled in connection details for the ADLS Gen2 shortcut.](/lab/media/adls-gen2-connection-filled.png)
 
 8.  Select the **data** and **litwaredata** checkbox and then click on the **Next** button.
 
-    ![Screenshot showing the selection of data and litwaredata checkboxes.](media/litwaredata-checkboxes.png)
+    ![Screenshot showing the selection of data and litwaredata checkboxes.](/lab/media/litwaredata-checkboxes.png)
 
 9. Click on the **Create** button.
 
-    ![Screenshot showing the creation of the ADLS Gen2 shortcut.](media/adls-gen2-creation.png)
+    ![Screenshot showing the creation of the ADLS Gen2 shortcut.](/lab/media/adls-gen2-creation.png)
 
 10. And there you go! Your shortcut is now ready! Click (do not expand) on the newly created shortcut named **litwaredata**.
 
-    ![Screenshot showing the newly created shortcut named litwaredata.](media/new-shortcut-created.png)
+    ![Screenshot showing the newly created shortcut named litwaredata.](/lab/media/new-shortcut-created.png)
 
 Prior to Microsoft Fabric, departments at Zava had to move the data they needed from other departments via time-consuming ETL processes. But look, now they have created shortcuts. No need to move any of this data. That is the power of OneLake!
 
@@ -104,7 +104,7 @@ Now, let’s see how Data Engineer, Bryan, got the remaining data into OneLake b
 
 1. Inside the **ZavaLakehouse**, select **Open Notebook** then choose **New Notebook**.
 
-    ![Screenshot showing how to create a new notebook in Real-Time Intelligence.](media/create-new-notebook.png)
+    ![Screenshot showing how to create a new notebook in Real-Time Intelligence.](/lab/media/create-new-notebook.png)
 
 2. Once the notebook is created, paste the **below code** in the existing cell and run the cell by clicking on the **Run cell** icon.
 
@@ -123,12 +123,8 @@ Now, let’s see how Data Engineer, Bryan, got the remaining data into OneLake b
         spark.createDataFrame(df).write.mode("ignore").format("delta").saveAsTable(table_name)
     ```
 
-    ![Screenshot showing the code cell to create Delta tables in a Notebook](media/create-delta-tables-code-cell.png)
-
 3. Once the code cell runs successfully, you will see a green tick at the bottom of the cell. Now, expand the **Tables** section, expand **dbo**, select on the **three dots** and the select **Refresh**. You should see the newly created Delta tables listed here.
 
-    ![Screenshot showing the refreshed Delta tables in the Tables section](media/refresh-delta-tables.png)
+    ![Screenshot showing the refreshed Delta tables in the Tables section](/lab/media/refresh-delta-tables.png)
 
 4. You now have all the tables in **OneLake** for Zava to leverage.
-
-    ![Screenshot showing the tables in OneLake for Zava to leverage](media/tables-in-onelake.png)
