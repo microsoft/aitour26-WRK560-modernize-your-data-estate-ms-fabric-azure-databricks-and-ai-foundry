@@ -8,7 +8,7 @@
 
 In this exercise, you will act as the Data Engineer, Bryan, to transfer Zava's data from ADLS Gen2 into the Lakehouse and initiate data preparation for the upcoming merger between Zava and Litware Inc.
 
-1. In the virtual machine, open a web browser and browse to +++**https://app.fabric.microsoft.com**+++.
+1. In the virtual machine, open a web browser and browse to +++https://app.fabric.microsoft.com+++.
 2. When prompted, sign in using the following credentials:
     * **Email**: +++**@lab.CloudPortalCredential(User1).Username**+++
     * **Password**: +++**@lab.CloudPortalCredential(User1).Password**+++
