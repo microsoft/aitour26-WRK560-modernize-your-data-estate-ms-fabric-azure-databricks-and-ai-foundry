@@ -10,15 +10,15 @@ In the following exercises, you will see how the Zava team leveraged the power o
 
 The lab scenario begins on January 30th. The new CEO, Kayo, has noticed some negative trends in the company’s key metrics, including:
 
-A high number of their customers leaving
+- A high number of their customers leaving
 
-Falling sales revenue
+- Falling sales revenue
 
-High bounce rate on their website
+- High bounce rate on their website
 
-High operating costs
+- High operating costs
 
-Poor customer experience
+- Poor customer experience
 
 And most importantly, low market sentiment
 
