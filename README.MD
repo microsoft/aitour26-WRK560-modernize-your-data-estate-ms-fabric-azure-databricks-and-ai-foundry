@@ -56,8 +56,8 @@ By the end of this session, learners will be able to:
 
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="Someleze Diko"
+    <td align="center"><a href="http://github.com/dikodev">
+        <img src="https://github.com/dikodev.png" width="100px;" alt="Someleze Diko"
 /><br />
         <sub><b> Someleze Diko
 </b></sub></a><br />
