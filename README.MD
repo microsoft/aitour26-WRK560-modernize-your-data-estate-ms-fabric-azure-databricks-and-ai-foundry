@@ -1,88 +1,45 @@
-# Welcome AI Tour 26 Creators!
-
-Thanks for creating content for AI Tour 26.
-
-One of our opportunities from FY25 was make a more consistent experience for attendees.  Following this template, and keeping users in these repos, will help us achieve this opportunity for this year's AI Tour.
-
-Steps:
-
-## Docs using MKDocs
-If you are interested in using mkdocs, this repo is configured for it.
-1. update the `mkdocs.yml` file to reference your session. Look particularly for the `site_name`, `site_author`, and `repo_name` tags.
-1. Subfolders in the docs folder will show up as tabs in the navigation bar.
-
-If you want to disable mkdocs:
-1. Delete the mkdocs.yml file. 
-1. Delete the references to it in [docs/README.md](./docs/README.md)
-1. Delete the docs/assets folder and its contents.
-
-## Other folders
-Note the data, docs, src, lab, session-delivery-resources folders. 
-1. Remove folders that you dont need.
-1. Please keep and use the folders that you do need.  e.g. put your data in the data folder, and put your docs in the docs folder.
-
-## Update Readme
-1. Fill out the content below in this file, below the banner graphic.
-
-## Update Repo Info
-
-1. Note the data, docs, src, lab, session-delivery-resources folders. 
-
-    1. Remove folders that you dont need, but please keep and use the folders that you do need.  e.g. put your data in the data folder, and put your docs in the docs folder.
-
-1. Fill out the content below in this file, below the banner graphic.
-
-1. Update the Repo Info for this repo 
-    1. Click the gear icon⚙️ in the upper right.
-    1. Set a good description of this repo.
-    1. Add the technologies that you're using in this session.  E.g. the same items that are in the Technologies Used section below.
-
-1. Please embed links to Learn with your campaign codes!
-
-## Slides and Recordings
-1. Do not store slides or recordings in this repo
-1. We will implement a similar solution to last year's with azure blob storage. When the time comes, link to these from the session-delivery-resources folder readme.
-
-## Questions?
-Send them to Mike Kinsman, Erik Weis, and cc Anthony Bartolo, or surface through your content lead.
-
-## Last step
-Delete this line and everything above it!
-
-
 <p align="center">
 <img src="img/Banner-MS-AI-Tour-26.png" alt="decorative banner" width="1200"/>
 </p>
 
 # [Microsoft AI Tour 2026](https://aitour.microsoft.com)
 
-## 🔥BRKXXX: Modernize your data estate MS Fabric, Azure Databricks, and AI Foundry
+## 🔥WRK560: Modernize your data estate MS Fabric, Azure Databricks, and AI Foundry
 
 If you will be delivering this session, check the [session-delivery-sources](./session-delivery-resources/) folder for slides, scripts, and other resources.
 
 ### Session Description
 
-*Add Session Description*
+This lab explores how organizations can leverage their legacy data by unifying their data estate using Microsoft Fabric. Go from data chaos to clarity in this hands-on lab. Learn real-time ingestion, transformation, and AI-driven insights using Microsoft Fabric and Azure Databricks. Build scalable data solutions and explore agentic AI for smarter decisions and real business impact
 
 
 ### 🧠 Learning Outcomes
 
 By the end of this session, learners will be able to:
 
--  
--
--
+- Set up an environment
+- Ingest raw data using ADLS Gen2 shortcuts
+- Transform and analyze data using Azure Databricks
+- Mirror Azure Databricks data in Microsoft Fabric
+- Build data pipelines using Delta Live Tables
+- Create Power BI reports using the semantic model with shortcut data
+- Create Data Agents and Azure AI Foundry agents for AI insights
 
 ### 💻 Technologies Used
 
-1.
-1.
-1.
+1. Microsoft Fabric (including OneLake, Power BI, Copilot, Data Agents)
+1. Azure Databricks (catalog mirroring with Fabric)
+1. Power BI (AI capabilities)
+1. Azure AI Foundry
 
 ### 🔗 Session Resources
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Additional Resources for this session | https://learn.microsoft.com | Links specific to this session |
+| Docs - Unity Catalog | [What is Unity Catalog?](https://learn.microsoft.com/azure/databricks/data-governance/unity-catalog/) | This documentation provides an overview of Unity Catalog, its features, and how it can be used to manage data governance in Azure Databricks. |
+| Docs - Mirrored Azure Databricks Catalog | [Mirroring Azure Databricks Unity Catalog](https://learn.microsoft.com/fabric/mirroring/azure-databricks) | This documentation explains how to mirror Azure Databricks Unity Catalog with Microsoft Fabric. |
+| Tutorial - Mirror Unity Catalog | [Configure Microsoft Fabric mirrored databases from Azure Databricks](https://learn.microsoft.com/fabric/mirroring/azure-databricks-tutorial) | This tutorial provides a step-by-step guide on configuring Microsoft Fabric mirrored databases from Azure Databricks. |
+| Docs - Fabric Data Agents | [How to create a Fabric data agent](https://learn.microsoft.com/fabric/data-science/how-to-create-data-agent) | This documentation explains how to create a Fabric data agent to enable conversational AI experiences that answer questions about data stored in lakehouses, warehouses, Power BI semantic models and KQL databases in Fabric. |
+
 
 ### 📚 Continued Learning Resources
 | Resources          | Links                             | Description        |
@@ -97,27 +54,14 @@ By the end of this session, learners will be able to:
 
 ## Content Owners
 
-<!-- TODO: Add yourself as a content owner
-1. Change the src in the image tag to {your github url}.png
-2. Change INSERT NAME HERE to your name
-3. Change the github url in the final href to your url. -->
-
-
 <table>
 <tr>
     <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE"
-"/><br />
-        <sub><b> INSERT NAME HERE
+        <img src="https://github.com/mikekinsman.png" width="100px;" alt="Someleze Diko"
+/><br />
+        <sub><b> Someleze Diko
 </b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
-    </td>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE
-"/><br />
-        <sub><b>INSERT NAME HERE
-</b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
+            <a href="https://github.com/dikodev" title="talk">📢</a> 
     </td>
 </tr></table>
 
