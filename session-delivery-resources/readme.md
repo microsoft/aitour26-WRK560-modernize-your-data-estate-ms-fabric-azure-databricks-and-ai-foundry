@@ -1,6 +1,8 @@
 ## How to deliver this session
 
-🥇 Thanks for delivering this session!
+🥇 Welcome,
+
+We're glad you are here and look forward to your delivery of this amazing content! As an experienced presenter, we know you know HOW to present so this guide will focus on WHAT you need to present. It will provide you a full run-through of the presentation created by the presentation design team.
 
 Prior to delivering the workshop please:
 
@@ -13,25 +15,18 @@ Prior to delivering the workshop please:
 
 | Resources          | Links                            | Description |
 |-------------------|----------------------------------|-------------------|
-| Workshop Slide Deck      |  [Presentation](https://aka.ms/)  | Presentation slides for this workshop with presenter notes and embedded demo video |
-| Session Delivery Deck     |  [Deck](https://aka.ms/) | The session delivery slides |
-| More Files     |  [Some More Files](https://aka.ms/) | More File Descriptions |
+| Workshop Slide Deck      |  [Presentation](https://aka.ms/AAxrab7)  | Presentation slides for this workshop with presenter notes and embedded demo video |
+| Session Delivery Deck Recording     |  [Video](https://aka.ms/AAxrab8) | Recorded delivery of the Workshop slide deck |
 
 
 ## 🚀Get Started
 
-The workshop is divided into multiple sections including 16 slides, 1 demo and 2 hands on labs.
+The workshop is divided into multiple sections including 17 slides to cover the key concepts and hands-on lab.
 
 ### 🕐Timing
 
 | Time        | Description 
 --------------|-------------
-0:00 - 5:00   | Intro and overview
-5:00 - 70:00  | Session Steps
+0:00 - 15:00   | Intro and overview
+15:00 - 70:00  | Workshop Steps & Completion
 70:00 - 75:00 | Wrap up and Q&A
-
-### 🏋️Preparation
-Preparation Notes go here
-
-### 🖥️Demos
-Description of demos goes here
