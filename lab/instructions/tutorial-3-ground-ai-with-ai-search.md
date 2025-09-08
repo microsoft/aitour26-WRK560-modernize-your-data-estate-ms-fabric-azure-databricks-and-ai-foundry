@@ -62,6 +62,7 @@ data from Bryan stored in Microsoft OneLake as knowledge base.
 11. Select **Next: Add cognitive skills (optional)** to proceed then select **Skip to: Customize target index**.
 
 12. In the **Customize target index** tab, enter the following details:
+
 | Setting         | Value                                    |
 |--------------------|------------------------------------------|
 | Index name        | Enter +++**onelake-index**+++              |
@@ -157,6 +158,7 @@ Upload button again. If it still doesn't work, refresh the page and try uploadin
     ![Screenshot showing how to edit a node in Azure AI Foundry](/lab/media/azure-ai-foundry-edit-node.png)
 
 9. In the **Generate** dialog, update the following details:
+
 | Setting         | Value                                    |
 |--------------------|------------------------------------------|
 | acs_index_connection        | Select **srch@lab.LabInstance.Id**              |
