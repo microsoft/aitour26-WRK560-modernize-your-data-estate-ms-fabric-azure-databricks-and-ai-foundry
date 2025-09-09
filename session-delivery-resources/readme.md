@@ -16,7 +16,7 @@ Prior to delivering the workshop please:
 | Resources          | Links                            | Description |
 |-------------------|----------------------------------|-------------------|
 | Workshop Slide Deck      |  [Presentation](https://aka.ms/AAxrab7)  | Presentation slides for this workshop with presenter notes and embedded demo video |
-| Session Delivery Deck Recording     |  [Video](https://aka.ms/AAxrab8) | Recorded delivery of the Workshop slide deck |
+| Session Delivery Deck Recording     |  [Video](https://youtu.be/jhkxQI4AMqY) | Recorded delivery of the Workshop slide deck |
 
 
 ## 🚀Get Started
