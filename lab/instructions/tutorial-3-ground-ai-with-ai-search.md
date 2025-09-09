@@ -112,8 +112,6 @@ Let's continue stepping into the shoes of Reta, the Data Scientist to see how.
 
 6. Once the Azure AI Search services are connected, select **Close**. You will see both connections listed under the **Connected resources** tab.
 
-    ![Screenshot showing connected resources in Azure AI Foundry](/lab/media/azure-ai-foundry-connected-resources.png)
-
 ---
 
 ## Task 3.3: Setup and use Prompt Flow in Azure AI Foundry
