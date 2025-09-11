@@ -68,6 +68,10 @@ Select **Next >** to go to the first exercise.
 
 !INSTRUCTIONS [Exercise 4: Build Power BI Report](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/tutorial-4-power-bi-report.md)
 
+===
+
+!INSTRUCTIONS [Exercise 5: Clean up resources](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/tutorial-5-clean-up-resources.md)
+
 ## Discussions
 
 Build your first agent with Azure AI Agent Service is an open source project supported by Microsoft. See the [SUPPORT.md](../SUPPORT.md) file for details on how to raise issues or contribute. If you enjoyed this workshop please give the repository a ⭐ and share it with others.

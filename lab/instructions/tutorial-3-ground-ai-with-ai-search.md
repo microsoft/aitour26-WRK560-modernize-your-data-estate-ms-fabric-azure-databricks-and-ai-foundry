@@ -30,13 +30,13 @@ data from Bryan stored in Microsoft OneLake as knowledge base.
 4. Close the **Manage access** pane and then select your **ZavaLakehouse** inside the workspace.
 
 5. Copy the URL from the browser address bar and paste it into a notepad for later use. It should look something like this:
-   `https://<your-region>.lakehouse.fabric.microsoft.com/lakehouses/<lakehouse-id>`
+   `https://app.fabric.microsoft.com/groups/<workspace-id>/lakehouses/<lakehouse-id>`
 
-6. Open a new tab in your VM browser and sign in to the Azure Portal by clicking on +++https://portal.azure.com+++, enter your credentials if prompted (on the resources tab). In the Azure portal, search for +++**rg-build25-@lab.LabInstance.Id**+++. Select the resource group from the search results.
+6. Open a new tab in your VM browser and sign in to the Azure Portal by clicking on +++https://portal.azure.com+++, enter your credentials if prompted (on the resources tab). In the Azure portal, search for +++rg-build25-@lab.LabInstance.Id+++. Select the resource group from the search results.
 
     ![Screenshot showing how to search for a resource group in Azure Portal](/lab/media/azure-portal-search-rg.png)
 
-7. In the **rg-build25-@lab.LabInstance.Id** resource group, search for +++**Search Service**+++ and select the **srch-@lab.LabInstance.Id** service from the results.
+7. In the **rg-build25-@lab.LabInstance.Id** resource group, search for +++Search Service+++ and select the **srch-@lab.LabInstance.Id** service from the results.
 
 8. In the **Search service**, select the **Import data** option to begin setting up the data source.
 
@@ -46,37 +46,43 @@ data from Bryan stored in Microsoft OneLake as knowledge base.
 
 10. In the Connect your data tab, provide the following details:
 
-| Setting         | Value                                    |
-|--------------------|------------------------------------------|
-| Data Source Type        | **OneLake files (preview)**              |
-| Data source name               | Enter +++**onelake**+++          |
-| Data to extract               | Select **All metadata**                     |
-| Parsing mode               | Select **JSON Array**                     |
-| Connect by               | Choose **Lakehouse URL**                     |
-| OneLake URL              | Paste the URL you copied earlier from the Fabric Lakehouse.          |
-| Lakehouse folder/shortcut | Enter +++**products**+++          |
-| Managed identity authentication | Select **System-assigned**                     |
+    | Setting         | Value                                    |
+    |--------------------|------------------------------------------|
+    | Data Source Type        | **OneLake files (preview)**              |
+    | Data source name               | Enter +++**onelake**+++          |
+    | Data to extract               | Select **All metadata**                     |
+    | Parsing mode               | Select **JSON Array**                     |
+    | Connect by               | Choose **Lakehouse URL**                     |
+    | OneLake URL              | Paste the URL you copied earlier from the Fabric Lakehouse.          |
+    | Lakehouse folder/shortcut | Enter +++**products**+++          |
+    | Managed identity authentication | Select **System-assigned**                     |
 
-![Screenshot showing how to connect data in Azure AI Search](/lab/media/azure-ai-search-connect-data.png)
+    ![Screenshot showing how to connect data in Azure AI Search](/lab/media/azure-ai-search-connect-data.png)
 
 11. Select **Next: Add cognitive skills (optional)** to proceed then select **Skip to: Customize target index**.
 
 12. In the **Customize target index** tab, enter the following details:
 
-| Setting         | Value                                    |
-|--------------------|------------------------------------------|
-| Index name        | Enter +++**onelake-index**+++              |
-| Key              | Select **id**                     |
+    | Setting         | Value                                    |
+    |--------------------|------------------------------------------|
+    | Index name        | Enter +++**onelake-index**+++              |
+    | Key              | Select **id**                     |
 
 13. For the fields listed, configure them as provide in the image below:
 
     ![Screenshot showing how to customize target index in Azure AI Search](/lab/media/azure-ai-search-customize-index.png)
 
-14. Once done, select **Create an indexer** and enter **+++onelake-indexer+++** as the name then select **Submit** to finalize the setup.
+14. Once done, select **Create an indexer** and enter +++onelake-indexer+++ as the name then select **Submit** to finalize the setup.
 
     ![Screenshot showing how to create an indexer in Azure AI Search](/lab/media/azure-ai-search-create-indexer.png)
 
----
+### Next Step
+
+> Select **Next >** to Establish Azure OpenAI & AI Search connections in AI Foundry
+
+===
+
+!INSTRUCTIONS []()
 
 ## Task 3.2: Establish Azure OpenAI and Azure AI Search connections in AI Foundry
 
@@ -87,12 +93,12 @@ knowledge base.
 
 Let's continue stepping into the shoes of Reta, the Data Scientist to see how.
 
-1. In a new tab of your VM browser, navigate to +++https://ai.azure.com/projects+++ and sign in with your credentials if prompted. Now, in the Azure AI Foundry, select the **prj-build@lab.LabInstance.Id** project.
+1. In your resource group search for and select **prj-build@lab.LabInstance.Id** project then select the **Studio web URL** to launch Azure AI Foundry.
 
     ![Screenshot showing how to select a project in Azure AI Foundry](/lab/media/azure-ai-foundry-select-project.png)
 
-> [!NOTE]
-> Make sure to close any pop-ups that may appear.
+    > [!NOTE]
+    > Make sure to close any pop-ups that may appear.
 
 2. In the **prj-build@lab.LabInstance.Id** project, scroll down to the bottom and select **Management center** from the left navigation pane.
 
@@ -112,7 +118,13 @@ Let's continue stepping into the shoes of Reta, the Data Scientist to see how.
 
 6. Once the Azure AI Search services are connected, select **Close**. You will see both connections listed under the **Connected resources** tab.
 
----
+### Next Step
+
+> Select **Next >** to Configure and use Prompt flow in AI Foundry
+
+===
+
+!INSTRUCTIONS []()
 
 ## Task 3.3: Setup and use Prompt Flow in Azure AI Foundry
 
@@ -133,7 +145,7 @@ integration with Azure's ecosystem. It also offers enterprise-level security and
 
     ![Screenshot showing how to upload a prompt flow in Azure AI Foundry](/lab/media/azure-ai-foundry-upload-prompt-flow.png)
 
-4. Copy the path ++C:\Lab Assets\01_Main_Lab_Assets\artifacts\aistudio++, paste it into the **File name** textbox and select the **Open** button.
+4. Copy the path ``C:\Lab Assets\01_Main_Lab_Assets\artifacts\aistudio\promptflows``, paste it into the **File name** textbox and select the **Open** button.
 
     ![Screenshot showing how to select a file in Azure AI Foundry](/lab/media/azure-ai-foundry-browse-file.png)
 
@@ -141,9 +153,9 @@ integration with Azure's ecosystem. It also offers enterprise-level security and
 
     ![Screenshot showing how to select a flow type in Azure AI Foundry](/lab/media/azure-ai-foundry-select-flow-type.png)
 
-> [!NOTE]
-> If clicking on the Upload button doesn't redirect you to the Prompt Flow screen, click the
-Upload button again. If it still doesn't work, refresh the page and try uploading again.
+    > [!NOTE]
+    > If clicking on the Upload button doesn't redirect you to the Prompt Flow screen, click the
+    Upload button again. If it still doesn't work, refresh the page and try uploading again.
 
 6. Select the **Start compute session** button to initialize the flow. It will take approximately 2-3 minutes to start the compute session. Please wait for some time.
 
@@ -157,12 +169,12 @@ Upload button again. If it still doesn't work, refresh the page and try uploadin
 
 9. In the **Generate** dialog, update the following details:
 
-| Setting         | Value                                    |
-|--------------------|------------------------------------------|
-| acs_index_connection        | Select **srch@lab.LabInstance.Id**              |
-| acs_index_name              | Select **onelake-index**         |
-| embedding_type              | Select **Azure OpenAI**                     |
-| aoi_embedding_connection              | Select **openAIResource2@lab.LabInstance.Id**    |
+    | Setting         | Value                                    |
+    |--------------------|------------------------------------------|
+    | acs_index_connection        | Select **srch@lab.LabInstance.Id**              |
+    | acs_index_name              | Select **onelake-index**         |
+    | embedding_type              | Select **Azure OpenAI**                     |
+    | aoi_embedding_connection              | Select **openAIResource2@lab.LabInstance.Id**    |
 
 10. Select the **Save** button to save the changes made to the node.
 
@@ -178,14 +190,17 @@ Upload button again. If it still doesn't work, refresh the page and try uploadin
 
 13. Select the **Chat** button on the top right corner to test the prompt flow. Select the **+ icon** to start a new session and replace the default prompt and paste the following prompt:
 
-    ++
+    ``
     Can you show me some Indian dresses for for a wedding in Udaipur?
-    ++
-
+    ``
     ![Screenshot showing how to test a prompt flow in Azure AI Foundry](/lab/media/azure-ai-foundry-test-prompt-flow.png)
 
-15. Select the **Send** button to see the response generated by the prompt flow.
+14. Select the **Send** button to see the response generated by the prompt flow.
 
     ![Screenshot showing the response from a prompt flow in Azure AI Foundry](/lab/media/azure-ai-foundry-prompt-flow-response.png)
 
 And there you go! You have successfully created and tested a Prompt flow in Azure AI Foundry using data from Microsoft Fabric. Reta can now further enhance this flow to improve Zava's customer experience and reduce churn. Once the Prompt flow is deployed as an endpoint, It can be consumed in the web application.
+
+### Next Step
+
+> Select **Next >** to Analyze Campaign Performance using Power BI
