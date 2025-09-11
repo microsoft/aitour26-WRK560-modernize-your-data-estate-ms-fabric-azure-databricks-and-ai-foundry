@@ -6,8 +6,7 @@ This exercise shows how Microsoft Fabric with Azure Databricks enabled Zava to s
 
 Delta Live Tables (DLT) allow you to build and manage reliable data pipelines that deliver high-quality data in Lakehouse. DLT helps data engineering teams simplify ETL development and management with declarative pipeline development, automatic data testing, and deep visibility for monitoring and recovery.
 
-1. Open a new tab in your VM browser and sign in to the Azure Databricks Workspace, by clicking on
-+++https://@lab.Variable(workspaceurl)+++ and press **ENTER**.
+1. Open a new tab in your VM browser and sign in to the Azure Databricks Workspace, by navigating to this url: +++https://@lab.Variable(workspaceurl)+++.
 
 2. Click on the **Sign in with Microsoft Entra ID**.
 
@@ -19,15 +18,15 @@ Delta Live Tables (DLT) allow you to build and manage reliable data pipelines th
 
     ![Screenshot showing the create ETL pipeline option in Azure Databricks](/lab/media/databricks-createetl.png)
 
-5. In the **Create ETL Pipeline** page, provide a name for your pipeline as +++**DLT_Pipeline**+++, scroll down to **Paths** and select the folder icon to browse the notebook.
+5. In the **Create ETL Pipeline** page, provide a name for your pipeline as +++DLT_Pipeline+++, scroll down to **Paths** and select the folder icon to browse the notebook.
 
     ![Screenshot showing the create ETL pipeline page in Azure Databricks](/lab/media/databricks-etl-details.png)
 
-6. In the **Select file** dialog, select **Shared**, select **01 DLT Notebook** and then click on the **Select** button.
+6. In the **Select file** dialog, select **Shared**, select **Analytics with ADB**, select **01 DLT Notebook** and then click on the **Select** button.
 
     ![Screenshot showing the selection of the 01 DLT Notebook in Azure Databricks](/lab/media/databricks-select-file.png)
 
-7. In the **Destination** section, enter +++**dbo**+++ as the **Default Schema** then select **Create**.
+7. In the **Destination** section, enter +++dbo+++ as the **Default Schema** then select **Create**.
 
 8. Select **Start** to begin the pipeline execution. Once the execution is completed, you will see a result similar to the following:
 
@@ -35,7 +34,13 @@ Delta Live Tables (DLT) allow you to build and manage reliable data pipelines th
 
 This beautiful lineage view showing the Medallion Architecture is a data design pattern commonly used in Databricks to organize and optimize data processing workflows in a lakehouse architecture. It structures data into three logical layers—Bronze, Silver, and Gold—ensuring data quality, accessibility, and scalability for analytics and machine learning.
 
----
+### Next Step
+
+> Select **Next >** to Mirror Azure Databricks Catalog in Fabric
+
+===
+
+!INSTRUCTIONS []()
 
 ## Task 2.2: Create a Mirrored Azure Databricks Catalog in Fabric and analyze data using T-SQL
 
@@ -55,12 +60,12 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
 5. Enter connection details by using the values in the table below. Make sure to leave all other settings at their default values.
 
-| Setting         | Value                                    |
-|--------------------|------------------------------------------|
-| Url               | +++@lab.Variable(workspaceurl)+++         |
-| Authentication Kind    | **Service Principal** |
-| Service principal client ID | +++@lab.Variable(clientid)+++          |
-| Service principal key              | +++@lab.Variable(token)+++                     |
+    | Setting         | Value                                    |
+    |--------------------|------------------------------------------|
+    | Url               | +++@lab.Variable(workspaceurl)+++         |
+    | Authentication Kind    | **Service Principal** |
+    | Service principal client ID | +++@lab.Variable(clientid)+++          |
+    | Service principal key              | +++@lab.Variable(token)+++                     |
 
 6. Select **Connect** then select **Next**.
 
@@ -98,3 +103,7 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
     ```
 
 This query gets campaign details from the mirrored database. It shows the average ROI, total profit, total cost, and average cost for each campaign, and sorts the results by highest average ROI.
+
+### Next Step
+
+> Select **Next >** to Build an AI Powered Chatbot with AI Foundry and Fabric
