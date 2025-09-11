@@ -60,12 +60,12 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
 5. Enter connection details by using the values in the table below. Make sure to leave all other settings at their default values.
 
-| Setting         | Value                                    |
-|--------------------|------------------------------------------|
-| Url               | +++@lab.Variable(workspaceurl)+++         |
-| Authentication Kind    | **Service Principal** |
-| Service principal client ID | +++@lab.Variable(clientid)+++          |
-| Service principal key              | +++@lab.Variable(token)+++                     |
+    | Setting         | Value                                    |
+    |--------------------|------------------------------------------|
+    | Url               | +++@lab.Variable(workspaceurl)+++         |
+    | Authentication Kind    | **Service Principal** |
+    | Service principal client ID | +++@lab.Variable(clientid)+++          |
+    | Service principal key              | +++@lab.Variable(token)+++                     |
 
 6. Select **Connect** then select **Next**.
 
