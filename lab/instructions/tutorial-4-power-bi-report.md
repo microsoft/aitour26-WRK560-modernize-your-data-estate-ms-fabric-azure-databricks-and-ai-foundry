@@ -8,7 +8,7 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
 
 1. In your browser, navigate back to the Microsoft Fabric Tab.
 
-2. Select **Workspaces** and select the **ZavaWorkspace_@labInstance_Id** workspace. Choose and select the **ZavaLakehouse** lakehouse item.
+2. Select **Workspaces** and select the **ZavaWorkspace_@lab.LabInstance.Id** workspace. Choose and select the **ZavaLakehouse** lakehouse item.
 
 3. In the **ZavaLakehouse** lakehouse view, select **New semantic model**.
 
