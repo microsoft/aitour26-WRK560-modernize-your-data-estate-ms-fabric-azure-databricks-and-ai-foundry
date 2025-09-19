@@ -77,7 +77,7 @@ Now, this is something exciting! This section shows how easy it is to create Sho
 
     ![Screenshot showing the selection of Azure Data Lake Storage Gen2 as the external source.](/lab/media/adls-gen2-source.png)
 
-4. On the pop-up window, select **Create new connection**.
+4. On the pop-up window, select **New connection**.
 
 5. In the screen below, we need to enter the connection details for the **ADLS Gen2** shortcut.
 

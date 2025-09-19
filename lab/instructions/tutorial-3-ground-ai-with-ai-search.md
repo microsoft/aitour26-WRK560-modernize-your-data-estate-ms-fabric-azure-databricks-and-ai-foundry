@@ -32,7 +32,7 @@ data from Bryan stored in Microsoft OneLake as knowledge base.
 5. Copy the URL from the browser address bar and paste it into a notepad for later use. It should look something like this:
    `https://app.fabric.microsoft.com/groups/<workspace-id>/lakehouses/<lakehouse-id>`
 
-6. Open a new tab in your VM browser and sign in to the Azure Portal by clicking on +++https://portal.azure.com+++, enter your credentials if prompted (on the resources tab). In the Azure portal, search for +++rg-build25-@lab.LabInstance.Id+++. Select the resource group from the search results.
+6. Open a new tab in your VM browser and sign in to the Azure Portal by clicking on +++https://portal.azure.com+++, enter your credentials if prompted (on the resources section). In the Azure portal, search for +++rg-build25-@lab.LabInstance.Id+++. Select the resource group from the search results.
 
     ![Screenshot showing how to search for a resource group in Azure Portal](/lab/media/azure-portal-search-rg.png)
 
@@ -42,7 +42,7 @@ data from Bryan stored in Microsoft OneLake as knowledge base.
 
     ![Screenshot showing how to import data in Azure AI Search](/lab/media/azure-ai-search-import-data.png)
 
-9. On the **Existing data source** dropdown, select **OneLake files (preview)** option.
+9. On the **Existing data source** dropdown, select **Microsoft OneLake (preview)** option.
 
 10. In the Connect your data tab, provide the following details:
 
@@ -59,7 +59,7 @@ data from Bryan stored in Microsoft OneLake as knowledge base.
 
     ![Screenshot showing how to connect data in Azure AI Search](/lab/media/azure-ai-search-connect-data.png)
 
-11. Select **Next: Add cognitive skills (optional)** to proceed then select **Skip to: Customize target index**.
+11. Select **Next: Add cognitive skills (optional)** to proceed, then select **Skip to: Customize target index**.
 
 12. In the **Customize target index** tab, enter the following details:
 

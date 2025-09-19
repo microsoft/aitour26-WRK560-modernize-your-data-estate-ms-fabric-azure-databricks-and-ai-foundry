@@ -6,10 +6,9 @@ We're glad you are here and look forward to your delivery of this amazing conten
 
 Prior to delivering the workshop please:
 
-1.  Read this document and all included resources included in their entirety.
-2.  Watch the video presentation
-3.  Ask questions of the content leads! We're here to help!
-
+1. Read this document and all included resources included in their entirety.
+2. Watch the video presentation
+3. Ask questions of the content leads! We're here to help!
 
 ## 📁 File Summary
 
@@ -17,7 +16,6 @@ Prior to delivering the workshop please:
 |-------------------|----------------------------------|-------------------|
 | Workshop Slide Deck      |  [Presentation](https://aka.ms/AAxrab7)  | Presentation slides for this workshop with presenter notes and embedded demo video |
 | Session Delivery Deck Recording     |  [Video](https://youtu.be/jhkxQI4AMqY) | Recorded delivery of the Workshop slide deck |
-
 
 ## 🚀Get Started
 
