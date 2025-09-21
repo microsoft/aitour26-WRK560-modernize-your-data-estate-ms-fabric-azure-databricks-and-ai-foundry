@@ -10,7 +10,7 @@ If you will be delivering this session, check the [session-delivery-sources](./s
 
 ### Session Description
 
-This lab explores how organizations can leverage their legacy data by unifying their data estate using Microsoft Fabric. Go from data chaos to clarity in this hands-on lab. Learn real-time ingestion, transformation, and AI-driven insights using Microsoft Fabric and Azure Databricks. Build scalable data solutions and explore agentic AI for smarter decisions and real business impact
+This lab explores how organizations can leverage their legacy data by unifying their data estate using Microsoft Fabric. Go from data chaos to clarity in this hands-on lab. Learn data ingestion, transformation, and AI-driven insights using Microsoft Fabric and Azure Databricks. Build scalable data solutions and explore agentic AI for smarter decisions and real business impact
 
 
 ### 🧠 Learning Outcomes

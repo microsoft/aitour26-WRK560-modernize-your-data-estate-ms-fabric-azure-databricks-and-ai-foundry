@@ -25,11 +25,13 @@ In this exercise, you will act as the Data Engineer, Bryan, to transfer Zava's d
 
 5. Select **Workspaces** from the left navigation pane. Then select **+ New workspace**.
 
-    ![Screenshot showing how to create a new workspace in Real-Time Intelligence.](/lab/media/create-new-workspace.png)
+    ![Screenshot showing how to create a new workspace in Microsoft Fabric.](/lab/media/create-new-workspace.png)
 
 6. Enter a name for the workspace, such as +++ZavaWorkspace_@lab.LabInstance.Id+++. Expand the **Advanced** option and make sure **Fabric Capacity** is selected then select **Apply** when done.
 
-    ![Screenshot showing how to create a new workspace in Real-Time Intelligence.](/lab/media/create-workspace-side-pane.png)
+    ![Screenshot showing options to create a new workspace in Microsoft Fabric.](/lab/media/create-workspace-side-pane.png)
+
+    ![Screenshot showing advanced options to create a new workspace in Microsoft Fabric.](/lab/media/create-workspace-side-pane-advanced.png)
 
     > [!NOTE]
     > **Note**: The workspace name must be unique across the Fabric tenant. If you receive an error, try a different name. Close any pop-up dialogs that appear on the screen.
@@ -40,15 +42,17 @@ Now, let's see how each department can easily create a Lakehouse in the Zava wor
 
 1. In the Zava workspace you created, select **+ New Item** from the top menu.
 
-    ![Screenshot showing how to create a new item in Real-Time Intelligence.](/lab/media/create-new-item.png)
+    ![Screenshot showing how to create a new item in Microsoft Fabric.](/lab/media/create-new-item.png)
 
 2. In the **New Item** pane, search for **Lakehouse** and select **Lakehouse**.
 
-    ![Screenshot showing how to create a new Lakehouse in Real-Time Intelligence.](/lab/media/create-lakehouse.png)
+    ![Screenshot showing how to create a new Lakehouse.](/lab/media/create-lakehouse.png)
 
 3. Enter a name for the Lakehouse, such as +++ZavaLakehouse+++.
 
 4. Select the **Lakehouse schemas** checkbox and then select **Create**.
+
+    ![Screenshot showing how to fill the new Lakehouse form in Microsoft Fabric.](/lab/media/create-new-lakehouse.png)
 
 In just a few seconds, Lakehouse was created by simply providing a name and no resource provisioning was needed. With the right access, you, as a Data Engineer, can effortlessly create a new Lakehouse. There is no need to set up any storage accounts or worry about network, infrastructure, key vault, Azure subscriptions, etc.
 
@@ -120,7 +124,7 @@ Now, let’s see how Data Engineer, Bryan, got the remaining data into OneLake b
 
 1. Inside the **ZavaLakehouse**, select **Open Notebook** then choose **New Notebook**.
 
-    ![Screenshot showing how to create a new notebook in Real-Time Intelligence.](/lab/media/create-new-notebook.png)
+    ![Screenshot showing how to create a new notebook in Microsoft Fabric.](/lab/media/create-new-notebook.png)
 
 2. Once the notebook is created, paste the **below code** in the existing cell and run the cell by clicking on the **Run cell** icon.
 
