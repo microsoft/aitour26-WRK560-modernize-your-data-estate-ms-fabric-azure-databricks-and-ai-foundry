@@ -18,7 +18,7 @@ Delta Live Tables (DLT) allow you to build and manage reliable data pipelines th
 
     ![Screenshot showing the create ETL pipeline option in Azure Databricks](/lab/media/databricks-createetl.png)
 
-5. In the **Create ETL Pipeline** page, provide a name for your pipeline as +++DLT_Pipeline+++, scroll down to **Paths** and select the folder icon to browse the notebook.
+5. In the **Create ETL Pipeline** page, provide a name for your pipeline as `DLT_Pipeline`, scroll down to **Paths** and select the folder icon to browse the notebook.
 
     ![Screenshot showing the create ETL pipeline page in Azure Databricks](/lab/media/databricks-etl-details.png)
 
@@ -26,7 +26,7 @@ Delta Live Tables (DLT) allow you to build and manage reliable data pipelines th
 
     ![Screenshot showing the selection of the 01 DLT Notebook in Azure Databricks](/lab/media/databricks-select-file.png)
 
-7. In the **Destination** section, enter +++dbo+++ as the **Default Schema** then select **Create**.
+7. In the **Destination** section, enter `dbo` as the **Default Schema** then select **Create**.
 
 8. Select **Start** to begin the pipeline execution. Once the execution is completed, you will see a result similar to the following:
 
@@ -46,7 +46,7 @@ This beautiful lineage view showing the Medallion Architecture is a data design 
 
 Mirroring the Azure Databricks Catalog structure in Fabric allows seamless access to the underlying catalog data through shortcuts. This means that any changes made to the data are instantly reflected in Fabric, without the need for data movement or replication. Let’s step into Data Engineer, Eva’s shoes to create a Mirrored Azure Databricks Catalog and analyze the data using T-SQL. 
 
-1. Navigate back to Microsoft Fabric tab on your browser (+++https://app.fabric.microsoft.com+++)
+1. Navigate back to Microsoft Fabric tab on your browser (`https://app.fabric.microsoft.com`)
 
 2. Select your **ZavaWorkspace_@lab.LabInstance.Id** workspace from the left navigation pane, and the select **+ New item** from the menu bar.
 

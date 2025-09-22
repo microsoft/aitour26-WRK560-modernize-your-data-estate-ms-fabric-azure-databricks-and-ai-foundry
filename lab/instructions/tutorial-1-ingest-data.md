@@ -8,7 +8,7 @@
 
 In this exercise, you will act as the Data Engineer, Bryan, to transfer Zava's data from ADLS Gen2 into the Lakehouse and initiate data preparation for the upcoming merger between Zava and Litware Inc.
 
-1. In the virtual machine, open a web browser and browse to +++https://app.fabric.microsoft.com+++.
+1. In the virtual machine, open a web browser and browse to `https://app.fabric.microsoft.com`.
 2. When prompted, sign in using the following credentials:
     * **Email**: +++@lab.CloudPortalCredential(User1).Username+++
     * **Password**: +++@lab.CloudPortalCredential(User1).Password+++
@@ -18,7 +18,7 @@ In this exercise, you will act as the Data Engineer, Bryan, to transfer Zava's d
     > [!NOTE]
     > **Note**: Close any pop-up dialogs that appear on the screen.
 
-4. Select **Continue** and on the **Job Title** box enter +++Data Expert++. On the **Business Phone Number** box enter +++1230000849+++ then select **Get Started**.
+4. Select **Continue** and on the **Job Title** box enter `Data Expert`. On the **Business Phone Number** box enter `1230000849` then select **Get Started**.
 
     > [!NOTE]
     > **Note:** Wait for the Power BI workspace to load and *close* the top bar for a better view.
@@ -48,7 +48,7 @@ Now, let's see how each department can easily create a Lakehouse in the Zava wor
 
     ![Screenshot showing how to create a new Lakehouse.](/lab/media/create-lakehouse.png)
 
-3. Enter a name for the Lakehouse, such as +++ZavaLakehouse+++.
+3. Enter a name for the Lakehouse, such as `ZavaLakehouse`.
 
 4. Select the **Lakehouse schemas** checkbox and then select **Create**.
 

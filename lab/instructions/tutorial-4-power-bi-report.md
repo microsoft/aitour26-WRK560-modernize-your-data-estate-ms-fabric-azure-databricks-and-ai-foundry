@@ -14,7 +14,7 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
 
     ![Screenshot showing the new semantic model option in Microsoft Fabric](/lab/media/new-semantic-model.png)
 
-4. In the **New semantic model** dialog, enter a name for the semantic model, such as +++**website_bounce_rate_model**+++. Search for +++website_bounce_rate+++ in the **Tables** section and add it to the model then select **Confirm**.
+4. In the **New semantic model** dialog, enter a name for the semantic model, such as **`website_bounce_rate_model`**. Search for `website_bounce_rate` in the **Tables** section and add it to the model then select **Confirm**.
 
     ![Screenshot showing the website bounce rate model in Microsoft Fabric](/lab/media/website-bounce-rate-model.png)
 
@@ -36,11 +36,11 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
 
     You will now see how easy it is for the data analyst to create compelling Power BI reports and get deep insights with literally no hands-on coding!
 
-11. Using the chat interface in the **Copilot pane**, enter this following prompt +++What's in my data+++ and observe how Copilot provides an overview of the contents of the dataset.
+11. Using the chat interface in the **Copilot pane**, enter this following prompt `What's in my data?` and observe how Copilot provides an overview of the contents of the dataset.
 
     ![Screenshot showing the overview of the dataset in the Copilot pane](/lab/media/whats-in-my-data.png)
 
-12. Using the chat interface in the **Copilot pane**, enter this following prompt +++Create a detailed page to analyze the Website Bounce Rate+++. Select the **Send** button and observe how Copilot generates a report page with relevant visuals and insights.
+12. Using the chat interface in the **Copilot pane**, enter this following prompt `Create a detailed page to analyze the Website Bounce Rate`. Select the **Send** button and observe how Copilot generates a report page with relevant visuals and insights.
 
     > [!NOTE]
     > If you see the error message **"Something went wrong"**, try refreshing the page and restart the task. Being in a shared environment, the service may be busy at times
@@ -51,7 +51,7 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
 
     Based on this report, we notice that the website bounce rate for Contoso is especially high amongst the Millennial customer segment. Let's ask Copilot if it has any recommendations for improving this bounce rate based on the results and data in the report.
 
-13. Enter the following prompt in the chat interface: +++Based on the data in the page, what can be done to improve the bounce rate of millennials?+++ and select the **Send** button.
+13. Enter the following prompt in the chat interface: `Based on the data in the page, what can be done to improve the bounce rate of millennials?` and select the **Send** button.
 
 14. Look at the suggestions Copilot provided. Copilot creates the desired Power BI report and even goes a step further to give powerful insights. Wendy realizes that for the website bounce rate to improve, Zava needs to transform their mobile website experience for millennials. This helps them reduce their millennial related customer churn too.
 
@@ -65,7 +65,7 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
 
 17. Adjust and expand the **Narrative** visual to fit the report canvas, you can do this by replacing 1 or 2 visuals on the canvas with the **Narrative** visual.
 
-18. Select the **Copilot (preview)** button within the visual. Then enter the following prompt: +++Summarize the data, provide an executive summary, indicating important takeaways+++ and select the **Update** button.
+18. Select the **Copilot (preview)** button within the visual. Then enter the following prompt: `Summarize the data, provide an executive summary, indicating important takeaways` and select the **Update** button.
 
     ![Screenshot showing how to update Narrative visual in Microsoft Fabric](/lab/media/narrative-update.png)
 

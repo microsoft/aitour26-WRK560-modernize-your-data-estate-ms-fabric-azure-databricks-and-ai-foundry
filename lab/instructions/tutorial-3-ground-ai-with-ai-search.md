@@ -17,7 +17,7 @@ product search and recommendations.
 Let's step into the shoes of Reta, the Data Scientist, as she launches Azure AI Foundry and leverages
 data from Bryan stored in Microsoft OneLake as knowledge base.
 
-1. Navigate back to Microsoft Fabric tab on your browser (+++https://app.fabric.microsoft.com+++)
+1. Navigate back to Microsoft Fabric tab on your browser (`https://app.fabric.microsoft.com`)
 
 2. Select your **ZavaWorkspace_@lab.LabInstance.Id** workspace from the left navigation pane, and then select **Manage access** from the top right corner.
 
@@ -32,11 +32,11 @@ data from Bryan stored in Microsoft OneLake as knowledge base.
 5. Copy the URL from the browser address bar and paste it into a notepad for later use. It should look something like this:
    `https://app.fabric.microsoft.com/groups/<workspace-id>/lakehouses/<lakehouse-id>`
 
-6. Open a new tab in your VM browser and sign in to the Azure Portal by clicking on +++https://portal.azure.com+++, enter your credentials if prompted (on the resources section). In the Azure portal, search for +++rg-build25-@lab.LabInstance.Id+++. Select the resource group from the search results.
+6. Open a new tab in your VM browser and sign in to the Azure Portal by clicking on `https://portal.azure.com`, enter your credentials if prompted (on the resources section). In the Azure portal, search for +++rg-build25-@lab.LabInstance.Id+++. Select the resource group from the search results.
 
     ![Screenshot showing how to search for a resource group in Azure Portal](/lab/media/azure-portal-search-rg.png)
 
-7. In the **rg-build25-@lab.LabInstance.Id** resource group, search for +++Search Service+++ and select the **srch-@lab.LabInstance.Id** service from the results.
+7. In the **rg-build25-@lab.LabInstance.Id** resource group, search for `Search Service` and select the **srch-@lab.LabInstance.Id** service from the results.
 
 8. In the **Search service**, select the **Import data** option to begin setting up the data source.
 
@@ -49,12 +49,12 @@ data from Bryan stored in Microsoft OneLake as knowledge base.
     | Setting         | Value                                    |
     |--------------------|------------------------------------------|
     | Data Source Type        | **OneLake files (preview)**              |
-    | Data source name               | Enter +++**onelake**+++          |
+    | Data source name               | Enter **`onelake`**          |
     | Data to extract               | Select **All metadata**                     |
     | Parsing mode               | Select **JSON Array**                     |
     | Connect by               | Choose **Lakehouse URL**                     |
     | OneLake URL              | Paste the URL you copied earlier from the Fabric Lakehouse.          |
-    | Lakehouse folder/shortcut | Enter +++**products**+++          |
+    | Lakehouse folder/shortcut | Enter **`products`**          |
     | Managed identity authentication | Select **System-assigned**                     |
 
     ![Screenshot showing how to connect data in Azure AI Search](/lab/media/azure-ai-search-connect-data.png)
@@ -65,14 +65,14 @@ data from Bryan stored in Microsoft OneLake as knowledge base.
 
     | Setting         | Value                                    |
     |--------------------|------------------------------------------|
-    | Index name        | Enter +++**onelake-index**+++              |
+    | Index name        | Enter **`onelake-index`**              |
     | Key              | Select **id**                     |
 
 13. For the fields listed, configure them as provide in the image below:
 
     ![Screenshot showing how to customize target index in Azure AI Search](/lab/media/azure-ai-search-customize-index.png)
 
-14. Once done, select **Create an indexer** and enter +++onelake-indexer+++ as the name then select **Submit** to finalize the setup.
+14. Once done, select **Create an indexer** and enter `onelake-indexer` as the name then select **Submit** to finalize the setup.
 
     ![Screenshot showing how to create an indexer in Azure AI Search](/lab/media/azure-ai-search-create-indexer.png)
 
