@@ -20,6 +20,8 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
 
 5. In the semantic model view, select the **Settings** gear icon then select **Power BI settings**.
 
+    ![Screenshot showing the settings pane in Microsoft Fabric](/lab/media/fabric-settings-pane.png)
+
 6. Select **Semantic models** tab and select the **website_bounce_rate_model** model from the left pane. Scroll down to the **Q&A** section, expand it and select **Turn on Q&A to ask natural language questions about your data** checkbox then select **Apply**.
 
     ![Screenshot showing the Q&A section in the website bounce rate model in Microsoft Fabric](/lab/media/website-bounce-rate-model-qa.png)
