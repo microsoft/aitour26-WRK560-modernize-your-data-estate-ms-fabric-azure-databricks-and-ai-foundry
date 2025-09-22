@@ -10,11 +10,12 @@ In this exercise, you will act as the Data Engineer, Bryan, to transfer Zava's d
 
 1. In the virtual machine, open a web browser and browse to `https://app.fabric.microsoft.com`.
 2. When prompted, sign in using the following credentials:
-    * **Email**: +++@lab.CloudPortalCredential(User1).Username+++
-    * **Password**: +++@lab.CloudPortalCredential(User1).Password+++
+
+    * **Email**: `@lab.CloudPortalCredential(User1).Username`
+    * **Password**: `@lab.CloudPortalCredential(User1).Password`
 
 3. If prompted to stay signed in, select **Yes**.
-    
+
     > [!NOTE]
     > **Note**: Close any pop-up dialogs that appear on the screen.
 
@@ -27,7 +28,7 @@ In this exercise, you will act as the Data Engineer, Bryan, to transfer Zava's d
 
     ![Screenshot showing how to create a new workspace in Microsoft Fabric.](/lab/media/create-new-workspace.png)
 
-6. Enter a name for the workspace, such as +++ZavaWorkspace_@lab.LabInstance.Id+++. Expand the **Advanced** option and make sure **Fabric Capacity** is selected then select **Apply** when done.
+6. Enter a name for the workspace, such as `ZavaWorkspace_@lab.LabInstance.Id`. Expand the **Advanced** option and make sure **Fabric Capacity** is selected then select **Apply** when done.
 
     ![Screenshot showing options to create a new workspace in Microsoft Fabric.](/lab/media/create-workspace-side-pane.png)
 
@@ -88,9 +89,9 @@ Now, this is something exciting! This section shows how easy it is to create Sho
     ![Screenshot showing the connection details for the ADLS Gen2 shortcut.](/lab/media/adls-gen2-connection.png)
 
 6. Enter the following connection details:
-   - **URL**: +++https://stbuild@lab.LabInstance.Id.dfs.core.windows.net/+++
+   - **URL**: `https://stbuild@lab.LabInstance.Id.dfs.core.windows.net/`
    - **Authentication Kind**: Select **Account Key**
-   - **Account Key**: +++@lab.Variable(storageaccountkey)+++
+   - **Account Key**: `@lab.Variable(storageaccountkey)`
 
 7. Then select **Next**.
 

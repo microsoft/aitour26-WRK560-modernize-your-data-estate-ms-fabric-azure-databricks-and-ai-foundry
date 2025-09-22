@@ -6,7 +6,7 @@ This exercise shows how Microsoft Fabric with Azure Databricks enabled Zava to s
 
 Delta Live Tables (DLT) allow you to build and manage reliable data pipelines that deliver high-quality data in Lakehouse. DLT helps data engineering teams simplify ETL development and management with declarative pipeline development, automatic data testing, and deep visibility for monitoring and recovery.
 
-1. Open a new tab in your VM browser and sign in to the Azure Databricks Workspace, by navigating to this url: +++https://@lab.Variable(workspaceurl)+++.
+1. Open a new tab in your VM browser and sign in to the Azure Databricks Workspace, by navigating to this url: `https://@lab.Variable(workspaceurl)`.
 
 2. Click on the **Sign in with Microsoft Entra ID**.
 
@@ -62,10 +62,10 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
     | Setting         | Value                                    |
     |--------------------|------------------------------------------|
-    | Url               | +++@lab.Variable(workspaceurl)+++         |
+    | Url               | `@lab.Variable(workspaceurl)`         |
     | Authentication Kind    | **Service Principal** |
-    | Service principal client ID | +++@lab.Variable(clientid)+++          |
-    | Service principal key              | +++@lab.Variable(token)+++                     |
+    | Service principal client ID | `@lab.Variable(clientid)`          |
+    | Service principal key              | `@lab.Variable(token)`                     |
 
 6. Select **Connect** then select **Next**.
 

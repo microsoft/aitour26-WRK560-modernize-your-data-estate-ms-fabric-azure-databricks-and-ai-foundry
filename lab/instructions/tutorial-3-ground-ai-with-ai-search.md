@@ -23,7 +23,7 @@ data from Bryan stored in Microsoft OneLake as knowledge base.
 
     ![Screenshot showing how to manage access in Microsoft Fabric](/lab/media/fabric-manage-access.png)
 
-3. In the **Manage access** pane, select the **+ Add people or groups** button then type +++src-@lab.LabInstance.Id+++. Select **Contributor** role from the dropdown and then select **Add**.
+3. In the **Manage access** pane, select the **+ Add people or groups** button then type `src-@lab.LabInstance.Id`. Select **Contributor** role from the dropdown and then select **Add**.
 
     ![Screenshot showing how to add people or groups in Microsoft Fabric](/lab/media/fabric-add-people.png)
 
@@ -32,7 +32,7 @@ data from Bryan stored in Microsoft OneLake as knowledge base.
 5. Copy the URL from the browser address bar and paste it into a notepad for later use. It should look something like this:
    `https://app.fabric.microsoft.com/groups/<workspace-id>/lakehouses/<lakehouse-id>`
 
-6. Open a new tab in your VM browser and sign in to the Azure Portal by clicking on `https://portal.azure.com`, enter your credentials if prompted (on the resources section). In the Azure portal, search for +++rg-build25-@lab.LabInstance.Id+++. Select the resource group from the search results.
+6. Open a new tab in your VM browser and sign in to the Azure Portal by clicking on `https://portal.azure.com`, enter your credentials if prompted (on the resources section). In the Azure portal, search for `rg-build25-@lab.LabInstance.Id`. Select the resource group from the search results.
 
     ![Screenshot showing how to search for a resource group in Azure Portal](/lab/media/azure-portal-search-rg.png)
 
