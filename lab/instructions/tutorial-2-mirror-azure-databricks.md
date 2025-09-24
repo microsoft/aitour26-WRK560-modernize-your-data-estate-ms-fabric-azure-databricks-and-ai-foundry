@@ -79,8 +79,6 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
 9. On the toolbar, to the left of the **Share** button, select the dropdown list and then select **SQL analytics endpoint**.
 
-    ![Screenshot showing the SQL analytics endpoint option in Microsoft Fabric](/lab/media/fabric-monitor-catalog.png)
-
 10. On the toolbar, select **Refresh**. In the Explorer pane, in the **Schemas** section, expand **rag** and then expand **Tables**. You can view the Mirrored Azure Databricks catalog tables data here.
 
     ![Screenshot showing the Explorer pane with the expanded schemas and tables in Microsoft Fabric](/lab/media/fabric-explorer-pane.png)
