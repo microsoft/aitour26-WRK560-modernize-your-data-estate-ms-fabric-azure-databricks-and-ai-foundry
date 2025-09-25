@@ -18,7 +18,7 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
 
     ![Screenshot showing the website bounce rate model in Microsoft Fabric](/lab/media/website-bounce-rate-model.png)
 
-5. In the semantic model view, select the **Settings** gear icon then select **Power BI settings**.
+5. In the top bar select the **Settings** gear icon then select **Power BI settings**.
 
     ![Screenshot showing the settings pane in Microsoft Fabric](/lab/media/fabric-settings-pane.png)
 

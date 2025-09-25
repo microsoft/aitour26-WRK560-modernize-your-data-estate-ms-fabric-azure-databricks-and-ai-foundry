@@ -1,4 +1,4 @@
-# Excercise 2: Build DLT Pipelines and Mirror Azure Databricks Catalog
+# Exercise 2: Build DLT Pipelines and Mirror Azure Databricks Catalog
 
 This exercise shows how Microsoft Fabric with Azure Databricks enabled Zava to solve their integration challenges. The acquired company, Litware Inc., was already using Databricks heavily and they stored their churn and sales data in ADLS Gen2. We’ll see how Unity Catalog benefited Zava's data architects so they could quickly get up to speed on all Litware Inc.’s data.
 
@@ -28,11 +28,19 @@ Delta Live Tables (DLT) allow you to build and manage reliable data pipelines th
 
 7. In the **Destination** section, enter `dbo` as the **Default Schema** then select **Create**.
 
-8. Select **Start** to begin the pipeline execution. Once the execution is completed, you will see a result similar to the following:
+    ![Screenshot showing the destination selection for the pipeline in Azure Databricks](/lab/media/databricks-elt-destination.png)
 
-    ![Screenshot showing the DLT pipeline execution result in Azure Databricks](/lab/media/databricks-dlt-result.png)
+8. Select **Start** to begin the pipeline execution.
+
+    ![Screenshot showing the DLT pipeline start button in Azure Databricks](/lab/media/databricks-elt-pipeline-start.png)
+
+Once the execution is completed, you will see a result similar to the following:
+
+![Screenshot showing the DLT pipeline execution result in Azure Databricks](/lab/media/databricks-elt-result.png)
 
 This beautiful lineage view showing the Medallion Architecture is a data design pattern commonly used in Databricks to organize and optimize data processing workflows in a lakehouse architecture. It structures data into three logical layers—Bronze, Silver, and Gold—ensuring data quality, accessibility, and scalability for analytics and machine learning.
+
+![Screenshot showing the DLT pipeline execution result in Azure Databricks](/lab/media/databricks-elt-lineage.png)
 
 ### Next Step
 
@@ -52,7 +60,7 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
     ![Screenshot showing the new item option in Microsoft Fabric](/lab/media/create-new-item.png)
 
-3. In the **New item** dialog, select **Mirrored Azure Databricks catalog (preview)** or search for it on the search bar.
+3. In the **New item** dialog, select **Mirrored Azure Databricks catalog** or search for it on the search bar.
 
     ![Screenshot showing the selection of Mirrored Azure Databricks catalog in Microsoft Fabric](/lab/media/fabric-mirrored-catalog.png)
 
@@ -71,7 +79,7 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
     ![Screenshot showing the connection details for the Mirrored Azure Databricks catalog in Microsoft Fabric](/lab/media/fabric-connect.png)
 
-7. In the **Choose data** screen, select the Catalog name as **litware_unity_catalog** from the dropdown box, and ensure **default** and **rag** schemas are selected. Select **Next** and then select **Create**.
+7. In the **Choose data** screen, select the Catalog name as **litware_unity_catalog** from the dropdown box. Ensure **default** and **rag** schemas are selected. Select **Next** and then select **Create**.
 
     ![Screenshot showing the selection of catalog and schemas in Microsoft Fabric](/lab/media/fabric-choose-catalog.png)
 
