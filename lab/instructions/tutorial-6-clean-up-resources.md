@@ -1,4 +1,4 @@
-# Exercise 5: Clean up resources
+# Exercise 6: Clean up resources
 
 ## Clean up resources
 
