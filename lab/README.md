@@ -55,23 +55,27 @@ Select **Next >** to go to the first exercise.
 
 ===
 
-!INSTRUCTIONS [Exercise 1: Data ingestion](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/tutorial-1-ingest-data.md)
+!INSTRUCTIONS [Exercise 1: Data ingestion](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/instructions/tutorial-1-ingest-data.md)
 
 ===
 
-!INSTRUCTIONS [Exercise 2: Mirror Azure Databricks in Fabric](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/tutorial-2-mirror-azure-databricks.md)
+!INSTRUCTIONS [Exercise 2: Mirror Azure Databricks in Fabric](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/instructions/tutorial-2-dlt-pipeline-with-azure-databricks.md)
 
 ===
 
-!INSTRUCTIONS [Exercise 3: Build Conversational AI Insights](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/tutorial-3-build-data-ai-agents.md)
+!INSTRUCTIONS [Exercise 3: Build Conversational AI Insights](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/instructions/tutorial-3-power-bi-report.md)
 
 ===
 
-!INSTRUCTIONS [Exercise 4: Build Power BI Report](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/tutorial-4-power-bi-report.md)
+!INSTRUCTIONS [Exercise 4: Build Power BI Report](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/instructions/tutorial-4-mirror-azure-databricks.md)
 
 ===
 
-!INSTRUCTIONS [Exercise 5: Clean up resources](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/tutorial-5-clean-up-resources.md)
+!INSTRUCTIONS [Exercise 5: Build Fabric Data Agents](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/instructions/tutorial-5-build-fabric-data-agents.md)
+
+===
+
+!INSTRUCTIONS [Exercise 6: Clean up resources](https://raw.githubusercontent.com/microsoft/aitour26-WRK560-modernize-your-data-estate-ms-fabric-azure-databricks-and-ai-foundry/main/lab/instructions/tutorial-6-clean-up-resources.md)
 
 ## Discussions
 
