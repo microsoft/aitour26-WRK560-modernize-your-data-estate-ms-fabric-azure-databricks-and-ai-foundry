@@ -2,7 +2,7 @@
 
 With the wide spectrum of data sources and Litware's data in OneLake, it is now time to get some awesome insights and visualizations from this data. Let's dive deep into the experience of the Business Analyst, Wendy, and do just that.
 
-## Task 4.1: Create a Semantic model and generate insights using Copilot for Power BI
+## Task 3.1: Create a Semantic model and generate insights using Copilot for Power BI
 
 Based on all the gathered data, Wendy is expected to create Power BI reports for other data citizens and stakeholders. Let's step into her shoes to experience the power of Copilot for Power BI in conjunction with Direct Lake Mode.
 
@@ -78,3 +78,7 @@ Based on all the gathered data, Wendy is expected to create Power BI reports for
     See how easy it was to get an executive summary with absolutely no IT resource dependency! The summary could also be generated in another language, if specified. Additionally, the summary updates if you filter the report on any visual.
 
 20. Select **File** from the menu bar, then select **Save this report** to save your report.
+
+### Next Step
+
+> Select **Next >** to Mirror Azure Databricks Catalog in Fabric

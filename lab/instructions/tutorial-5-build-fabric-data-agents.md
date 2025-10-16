@@ -1,8 +1,8 @@
-# Exercise 4: Build AI Agents with Fabric Data Agents
+# Exercise 5: Build AI Agents with Fabric Data Agents
 
 In this exercise, you step into Reta's shoes, a data scientist at Zava, to build AI agents using Fabric Data Agents. Fabric Data Agents allow you to create AI-powered agents that can interact with your data in Microsoft Fabric using natural language. You can use these agents to ask questions, generate insights, and automate tasks.
 
-## Task 4.1: Create a Fabric Data Agent
+## Task 5.1: Create a Fabric Data Agent
 
 1. On the left navigation pane, select your **ZavaWorkspace_@lab.LabInstance.Id** workspace then select the **ZavaLakehouse** you created in a previous exercise.
 
@@ -110,7 +110,7 @@ In this exercise, you step into Reta's shoes, a data scientist at Zava, to build
 
 !INSTRUCTIONS []()
 
-## Task 4.2: Establish Azure OpenAI and Fabric connections in AI Foundry
+## Task 5.2: Establish Azure OpenAI and Fabric connections in AI Foundry
 
 Zava integrated all of their data sources using Microsoft Fabric, including customer feedback, sales
 records, social media interactions, and encompassing internal company policy documents such as SOPs
@@ -162,7 +162,7 @@ Let's continue stepping into the shoes of Reta, the Data Scientist to see how.
 
 !INSTRUCTIONS []()
 
-## Task 4.3: Build an AI Foundry agent grounded with Fabric data
+## Task 5.3: Build an AI Foundry agent grounded with Fabric data
 
 In this task, you assist Reta to create an AI Foundry agent that leverages the Fabric Data Agent you created earlier. This agent will be able to answer questions about Zava's customer and sales data using natural language.
 
