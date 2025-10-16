@@ -61,7 +61,7 @@ In just a few seconds, Lakehouse was created by simply providing a name and no r
 
 > Select **Next >** to Ingest data from external sources using shortcuts.
 
----
+===
 
 !INSTRUCTIONS []()
 
@@ -115,9 +115,9 @@ Prior to Microsoft Fabric, departments at Zava had to move the data they needed 
 
 > Select **Next >** to Create Delta Tables using a Spark Notebook.
 
-!INSTRUCTIONS []()
-
 ===
+
+!INSTRUCTIONS []()
 
 ## Task 1.3: Create Delta Tables using Spark Notebook
 
