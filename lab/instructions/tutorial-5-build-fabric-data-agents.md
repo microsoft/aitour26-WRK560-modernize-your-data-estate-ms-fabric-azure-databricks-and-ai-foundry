@@ -8,37 +8,37 @@ In this exercise, you step into Reta's shoes, a data scientist at Zava, to build
 
 2. Select the **three ellipsis (...)** next to the **dbo** table and choose **New table shortcut**.
 
-    ![Screenshot showing how to create a new shortcut table in Microsoft Fabric.](/lab/media/create-new-shortcut-table.png)
+    ![Screenshot showing how to create a new shortcut table in Microsoft Fabric.](/lab/instructions/media/create-new-shortcut-table.png)
 
 3. In the **New shortcut** dialog, select the **Microsoft OneLake** option then select **litware_unity_catalog** from the select a data source type dialog. Select **Next** to continue.
 
-    ![Screenshot showing how to select Microsoft OneLake as the data source type.](/lab/media/one-lake-data-source.png)
+    ![Screenshot showing how to select Microsoft OneLake as the data source type.](/lab/instructions/media/one-lake-data-source.png)
 
 4. Expand the **Tables** and expand the **rag** dropdown to select the **campaigndata__tbl, customerchurdata__tbl & salestransaction__tbl** tables. Select **Next** to continue.
 
-    ![Screenshot showing how to select the dbo table from the rag schema.](/lab/media/select-dbo-table.png)
+    ![Screenshot showing how to select the dbo table from the rag schema.](/lab/instructions/media/select-dbo-table.png)
 
 5. Select **Create** to create the shortcut tables.
 
-    ![Screenshot showing how to create a new shortcut tables in Microsoft Fabric.](/lab/media/create-shortcut-tables.png)
+    ![Screenshot showing how to create a new shortcut tables in Microsoft Fabric.](/lab/instructions/media/create-shortcut-tables.png)
 
 6. Navigate back to the **ZavaWorkspace_@lab.LabInstance.Id** workspace and select **+ New Item** from the top menu.
 
-    ![Screenshot showing how to create a new item in Microsoft Fabric.](/lab/media/create-new-item.png)
+    ![Screenshot showing how to create a new item in Microsoft Fabric.](/lab/instructions/media/create-new-item.png)
 
 7. In the **New Item** pane, search for **Data Agent (preview)** and select **Data Agent (preview)**.
 
-    ![Screenshot showing how to create a new Data Agent in Microsoft Fabric.](/lab/media/create-data-agent.png)
+    ![Screenshot showing how to create a new Data Agent in Microsoft Fabric.](/lab/instructions/media/create-data-agent.png)
 
 8. Enter a name for the Data Agent, such as `ZavaDataAgent` then select **Create**.
 
 9. Once the Data Agent is created, select the **Add a data source** button.
 
-    ![Screenshot showing how to add a data source to the Data Agent in Microsoft Fabric.](/lab/media/add-data-source.png)
+    ![Screenshot showing how to add a data source to the Data Agent in Microsoft Fabric.](/lab/instructions/media/add-data-source.png)
 
 10. In the **Add a data source** pane, select **ZavaLakehouse** from the options then select **Add**.
 
-    ![Screenshot showing how to connect to the Lakehouse as a data source in Microsoft Fabric.](/lab/media/add-lakehouse.png)
+    ![Screenshot showing how to connect to the Lakehouse as a data source in Microsoft Fabric.](/lab/instructions/media/add-lakehouse.png)
 
 11. On the left pane, under the *ZavaLakehouse* dropdown, expand **dbo** and select the following tables as shown in the screenshot.
 
@@ -52,13 +52,13 @@ In this exercise, you step into Reta's shoes, a data scientist at Zava, to build
     - factinternetsales
     - factresellersales
 
-    ![Screenshot showing how to select tables from the Lakehouse as data sources in Microsoft Fabric.](/lab/media/select-tables-data-agent.png)
+    ![Screenshot showing how to select tables from the Lakehouse as data sources in Microsoft Fabric.](/lab/instructions/media/select-tables-data-agent.png)
 
 12. Help Zava gain insight on their most sold product by asking the Data Agent a question in the prompt box then select the **Send** button. For example, you can ask:
 
     - `What is the most sold product?`
 
-    ![Screenshot showing how to interact with the Data Agent in Microsoft Fabric.](/lab/media/ask-data-agent.png)
+    ![Screenshot showing how to interact with the Data Agent in Microsoft Fabric.](/lab/instructions/media/ask-data-agent.png)
 
 13. Data agent answered the question fairly well based on the selected tables. However, the SQL query needs some improvement, it orders the products by order quantity or units sold and not the revenue generated.
 
@@ -66,19 +66,19 @@ In this exercise, you step into Reta's shoes, a data scientist at Zava, to build
 
     - `Whenever I ask about "the most sold" products or items, the metric of interest is total sales revenue and not order quantity. The primary table to use is FactInternetSales. Only use FactResellerSales if explicitly asked about resales or when asked about total sales. Whenever I ask about "revenue from leaving" customers, the primary table to use is the CustomerChurdata__tbl and suggest one actionable retention strategy.`
 
-    ![Screenshot showing how to provide AI instructions to the Data Agent in Microsoft Fabric.](/lab/media/ai-instructions-data-agent.png)
+    ![Screenshot showing how to provide AI instructions to the Data Agent in Microsoft Fabric.](/lab/instructions/media/ai-instructions-data-agent.png)
 
 15. Now, ask the same question again in the prompt box then select the **Send** button.
 
     - `What is the most sold product?`
 
-    ![Screenshot showing how to interact with the Data Agent in Microsoft Fabric.](/lab/media/ask-data-agent-2.png)
+    ![Screenshot showing how to interact with the Data Agent in Microsoft Fabric.](/lab/instructions/media/ask-data-agent-2.png)
 
 16. This time, the SQL query generated by the data agent is more accurate and provides the correct answer based on total sales revenue.
 
 17. In addition to instructions, you can also provide some examples to the data agent to further improve its performance. Select on the **Example query** tab and select the **edit (pencil icon)** button.
 
-    ![Screenshot showing how to edit example queries for the Data Agent in Microsoft Fabric.](/lab/media/edit-example-query.png)
+    ![Screenshot showing how to edit example queries for the Data Agent in Microsoft Fabric.](/lab/instructions/media/edit-example-query.png)
 
 18. In the **Edit example queries** pane, select the **+ Add example** button and enter the following example with its corresponding SQL query. Then select the **Close (X)** button once done.
 
@@ -86,21 +86,21 @@ In this exercise, you step into Reta's shoes, a data scientist at Zava, to build
     |----------|-----------|
     | `How much revenue are we losing from leaving customers vs those who are staying?` | `SELECT StoreContract, Round(SUM(CASE WHEN Churn = 'Yes' THEN CAST(TotalAmount as FLOAT) * 12 ELSE 0 END), 2) AS ProjectedLostRevenue, Round(SUM(CASE WHEN Churn = 'No'  THEN CAST(TotalAmount as FLOAT) * 12 ELSE 0 END),2) AS ProjectedRetainedRevenue FROM customerchurdata__tbl GROUP BY StoreContract ORDER BY StoreContract;` |
 
-    ![Screenshot showing how to add example queries for the Data Agent in Microsoft Fabric.](/lab/media/add-example-query.png)
+    ![Screenshot showing how to add example queries for the Data Agent in Microsoft Fabric.](/lab/instructions/media/add-example-query.png)
 
 19. Now, ask the same question in the prompt box then select the **Send** button.
 
     - `How much revenue are we losing from leaving customers vs those who are staying?`
 
-    ![Screenshot showing how to interact with the Data Agent in Microsoft Fabric.](/lab/media/ask-data-agent-3.png)
+    ![Screenshot showing how to interact with the Data Agent in Microsoft Fabric.](/lab/instructions/media/ask-data-agent-3.png)
 
 20. Select on **Publish** button to publish the Data Agent.
 
-    ![Screenshot showing how to publish the Data Agent in Microsoft Fabric.](/lab/media/publish-data-agent.png)
+    ![Screenshot showing how to publish the Data Agent in Microsoft Fabric.](/lab/instructions/media/publish-data-agent.png)
 
 21. Keep note of the public URL of the Data Agent, as you will need it in the next step.
 
-    ![Screenshot showing the public URL of the Data Agent in Microsoft Fabric.](/lab/media/data-agent-url.png)
+    ![Screenshot showing the public URL of the Data Agent in Microsoft Fabric.](/lab/instructions/media/data-agent-url.png)
 
 ### Next Step
 
@@ -121,26 +121,26 @@ Let's continue stepping into the shoes of Reta, the Data Scientist to see how.
 
 1. Open a new tab in your VM browser and sign in to the Azure Portal by clicking on `https://portal.azure.com`, enter your credentials if prompted (on the resources section). In the Azure portal, search for `rg-build25-@lab.LabInstance.Id`. Select the resource group from the search results.
 
-    ![Screenshot showing how to search for a resource group in Azure Portal](/lab/media/azure-portal-search-rg.png)
+    ![Screenshot showing how to search for a resource group in Azure Portal](/lab/instructions/media/azure-portal-search-rg.png)
 
 2. In your resource group search for and select **prj-build@lab.LabInstance.Id** project then select the **Studio web URL** to launch Azure AI Foundry.
 
-    ![Screenshot showing how to select a project in Azure AI Foundry](/lab/media/azure-ai-foundry-select-project.png)
+    ![Screenshot showing how to select a project in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-select-project.png)
 
     > [!NOTE]
     > Make sure to close any pop-ups that may appear.
 
 3. In the **prj-build@lab.LabInstance.Id** project, scroll down to the bottom and select **Management center** from the left navigation pane.
 
-    ![Screenshot showing how to select Management center in Azure AI Foundry](/lab/media/azure-ai-foundry-management-center.png)
+    ![Screenshot showing how to select Management center in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-management-center.png)
 
 4. In the **Management center**, select the **Connected resources** tab and then select the **+ New connection** button.
 
-    ![Screenshot showing how to add a new connection in Azure AI Foundry](/lab/media/azure-ai-foundry-new-connection.png)
+    ![Screenshot showing how to add a new connection in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-new-connection.png)
 
 5. In the **New connection** pane, select **Azure OpenAI** from the list of connection types. You will find an Azure OpenAI resource with *gpt-4o* and *text-embedding-ada-002* models already deployed. Select the **Add connection** button to create a new connection.
 
-    ![Screenshot showing how to select Azure OpenAI in Azure AI Foundry](/lab/media/azure-ai-foundry-select-azure-openai.png)
+    ![Screenshot showing how to select Azure OpenAI in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-select-azure-openai.png)
 
 6. In the **New connection** dialog, select **Microsoft Fabric** from the list of connection types under **Agent Knowlegde Tools**. Provide the following details to connect to the Fabric Data Agent you created in the previous task:
 
@@ -150,7 +150,7 @@ Let's continue stepping into the shoes of Reta, the Data Scientist to see how.
 
     Select the **Add connection** button to create a new connection.
 
-    ![Screenshot showing how to connect to Microsoft Fabric in Azure AI Foundry](/lab/media/azure-ai-foundry-connect-fabric.png)
+    ![Screenshot showing how to connect to Microsoft Fabric in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-connect-fabric.png)
 
 7. Once the Azure AI Search services are connected, select **Close**. You will see both connections listed under the **Connected resources** tab.
 
@@ -168,15 +168,15 @@ In this task, you assist Reta to create an AI Foundry agent that leverages the F
 
 1. In the left navigation pane of the **Management center**, select the **Go to Project** button to return to the main project page.
 
-    ![Screenshot showing how to go back to the project in Azure AI Foundry](/lab/media/azure-ai-foundry-go-to-project.png)
+    ![Screenshot showing how to go back to the project in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-go-to-project.png)
 
 2. In the left navigation pane, select **Agents** the select the **+ New agent** button.
 
-    ![Screenshot showing how to create a new agent in Azure AI Foundry](/lab/media/azure-ai-foundry-new-agent.png)
+    ![Screenshot showing how to create a new agent in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-new-agent.png)
 
 3. Select the newly created agent, then select the **Try in playground** button on the right hand pane.
 
-    ![Screenshot showing how to try the agent in playground in Azure AI Foundry](/lab/media/azure-ai-foundry-try-in-playground.png)
+    ![Screenshot showing how to try the agent in playground in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-try-in-playground.png)
 
 4. On the right hand pane, under **Setup** provide the following details:
 
@@ -184,31 +184,31 @@ In this task, you assist Reta to create an AI Foundry agent that leverages the F
     - **Instructions**: Enter `You are an AI assistant that helps Zava to gain insights from customer churn and sales data. Use the Fabric Data Agent to answer questions about customer behavior and sales trends. Provide clear and concise answers with relevant details.`
     - **Deployment**: Leave as default `gpt-4o`
 
-    ![Screenshot showing how to set up the agent in Azure AI Foundry](/lab/media/azure-ai-foundry-agent-setup.png)
+    ![Screenshot showing how to set up the agent in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-agent-setup.png)
 
 5. Now let's ground the agent with Fabric Data. On the right hand pane, next to **Knowledge (0)** select the **+ Add** button.
 
-    ![Screenshot showing how to add knowledge to the agent in Azure AI Foundry](/lab/media/azure-ai-foundry-add-knowledge.png)
+    ![Screenshot showing how to add knowledge to the agent in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-add-knowledge.png)
 
 6. In the **Add knowledge** dialog, select **Microsoft Fabric** from the list of knowledge types. Then select the **ZavaDataAgent** connection you created in the previous task. Select the **Connect** button to add the Fabric Data Agent as a knowledge source for the agent.
 
-    ![Screenshot showing how to connect to Microsoft Fabric in Azure AI Foundry](/lab/media/azure-ai-foundry-connect-fabric-knowledge.png)
+    ![Screenshot showing how to connect to Microsoft Fabric in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-connect-fabric-knowledge.png)
 
 7. You will see the **ZavaDataAgent** listed under the **Knowledge** section on the right hand pane.
 
-    ![Screenshot showing the Fabric Data Agent added as a knowledge source in Azure AI Foundry](/lab/media/azure-ai-foundry-fabric-knowledge-added.png)
+    ![Screenshot showing the Fabric Data Agent added as a knowledge source in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-fabric-knowledge-added.png)
 
 8. Now, let's take a step further and enable the agent to use tools. On the right hand pane, next to **Actions (0)** select the **+ Add** button.
 
-    ![Screenshot showing how to add tools to the agent in Azure AI Foundry](/lab/media/azure-ai-foundry-add-tools.png)
+    ![Screenshot showing how to add tools to the agent in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-add-tools.png)
 
 9. In the **Add actions** dialog, select **Code Interpreter** from the list of action types.
 
-    ![Screenshot showing how to add Code Interpreter tool in Azure AI Foundry](/lab/media/azure-ai-foundry-add-code-interpreter.png)
+    ![Screenshot showing how to add Code Interpreter tool in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-add-code-interpreter.png)
 
 10. In the **Add code interpreter action** dialog, select the **Save** button to add the Code Interpreter tool to the agent.
 
-    ![Screenshot showing how to save Code Interpreter tool in Azure AI Foundry](/lab/media/azure-ai-foundry-save-code-interpreter.png)
+    ![Screenshot showing how to save Code Interpreter tool in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-save-code-interpreter.png)
 
     > [!NOTE]
     > You can also add your own custom code by using the **Select local files** option.
@@ -217,7 +217,7 @@ In this task, you assist Reta to create an AI Foundry agent that leverages the F
 
     - `What are the top 5 selling products by total revenue?`
 
-    ![Screenshot showing how to interact with the agent in Azure AI Foundry](/lab/media/azure-ai-foundry-ask-agent.png)
+    ![Screenshot showing how to interact with the agent in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-ask-agent.png)
 
     > [!IMPORTANT]
     > Your agent may take a few moments to respond as it fetches data from the Fabric Data Agent. If it does not respond with your expected answer, create a new thread or agent and try again.
@@ -226,7 +226,7 @@ In this task, you assist Reta to create an AI Foundry agent that leverages the F
 
     - `Can you show me a bar chart of the top 5 selling products by total revenue?`
 
-    ![Screenshot showing how to ask for a bar chart in Azure AI Foundry](/lab/media/azure-ai-foundry-ask-bar-chart.png)
+    ![Screenshot showing how to ask for a bar chart in Azure AI Foundry](/lab/instructions/media/azure-ai-foundry-ask-bar-chart.png)
 
 And there you go! You have successfully created an AI Foundry agent that leverages the Fabric Data Agent to answer questions about Zava's customer and sales data using natural language. Reta can now use this agent to gain insights and make data-driven decisions for Zava. This agent can be further enhanced by adding more knowledge sources, tools, refining its instructions and can be deployed to a custom web app or service for easy access by Zava's team. Congratulations you have completed this lab!
 
