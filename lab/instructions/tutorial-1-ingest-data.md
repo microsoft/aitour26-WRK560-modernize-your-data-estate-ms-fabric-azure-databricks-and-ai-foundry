@@ -61,7 +61,7 @@ In just a few seconds, Lakehouse was created by simply providing a name and no r
 
 > Select **Next >** to Ingest data from external sources using shortcuts.
 
-===
+---
 
 !INSTRUCTIONS []()
 
