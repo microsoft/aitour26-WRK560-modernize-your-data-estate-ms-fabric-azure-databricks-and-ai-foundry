@@ -8,11 +8,11 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
 2. Select your **ZavaWorkspace_@lab.LabInstance.Id** workspace from the left navigation pane, and the select **+ New item** from the menu bar.
 
-    ![Screenshot showing the new item option in Microsoft Fabric](/lab/instructions/media/create-new-item.png)
+    ![Screenshot showing the new item option in Microsoft Fabric](media/create-new-item.png)
 
 3. In the **New item** dialog, select **Mirrored Azure Databricks catalog** or search for it on the search bar.
 
-    ![Screenshot showing the selection of Mirrored Azure Databricks catalog in Microsoft Fabric](/lab/instructions/media/fabric-mirrored-catalog.png)
+    ![Screenshot showing the selection of Mirrored Azure Databricks catalog in Microsoft Fabric](media/fabric-mirrored-catalog.png)
 
 4. When the **New Source** dialog appears, select the **New Connection** radio button.
 
@@ -28,11 +28,11 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
 7. Select **Connect** then select **Next**.
 
-    ![Screenshot showing the connection details for the Mirrored Azure Databricks catalog in Microsoft Fabric](/lab/instructions/media/fabric-connect.png)
+    ![Screenshot showing the connection details for the Mirrored Azure Databricks catalog in Microsoft Fabric](media/fabric-connect.png)
 
 8. In the **Choose data** screen, select the Catalog name as **litware_unity_catalog** from the dropdown box. Ensure **default** and **rag** schemas are selected. Select **Next** and then select **Create**.
 
-    ![Screenshot showing the selection of catalog and schemas in Microsoft Fabric](/lab/instructions/media/fabric-choose-catalog.png)
+    ![Screenshot showing the selection of catalog and schemas in Microsoft Fabric](media/fabric-choose-catalog.png)
 
 9. On the toolbar, select **Monitor catalog** to track the progress of the mirroring process. Wait for mirroring to complete.
 
@@ -40,7 +40,7 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
 11. On the toolbar, select **Refresh**. In the Explorer pane, in the **Schemas** section, expand **rag** and then expand **Tables**. You can view the Mirrored Azure Databricks catalog tables data here.
 
-    ![Screenshot showing the Explorer pane with the expanded schemas and tables in Microsoft Fabric](/lab/instructions/media/fabric-explorer-pane.png)
+    ![Screenshot showing the Explorer pane with the expanded schemas and tables in Microsoft Fabric](media/fabric-explorer-pane.png)
 
 ### Next Step
 
