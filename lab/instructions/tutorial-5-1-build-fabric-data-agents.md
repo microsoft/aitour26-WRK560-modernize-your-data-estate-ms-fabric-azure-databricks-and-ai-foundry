@@ -104,4 +104,4 @@ In this exercise, you step into Reta's shoes, a data scientist at Zava, to build
 
 ### Next Step
 
-> Select **Next >** to Build an AI Foundry agent grounded with Fabric data.
+> Select **Next >** to setup connections for the AI Foundry agent.
