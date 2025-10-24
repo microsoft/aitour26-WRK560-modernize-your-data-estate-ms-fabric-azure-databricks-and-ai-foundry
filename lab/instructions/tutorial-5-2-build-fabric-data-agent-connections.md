@@ -44,4 +44,4 @@ Let's continue stepping into the shoes of Reta, the Data Scientist to see how.
 
 ### Next Step
 
-> Select **Next >** to Build an AI Foundry agent grounded with Fabric data.
+> Select **Next >** to setup connections for the AI Foundry agent.
