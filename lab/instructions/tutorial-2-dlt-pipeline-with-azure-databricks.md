@@ -44,4 +44,4 @@ This beautiful lineage view showing the Medallion Architecture is a data design 
 
 ### Next Step
 
-> Select **Next >** to Create Delta Tables using a Spark Notebook
+> Select **Next >** to Analyze Campaign Performance using Power BI
