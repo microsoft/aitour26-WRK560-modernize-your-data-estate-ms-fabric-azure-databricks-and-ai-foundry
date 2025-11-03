@@ -16,15 +16,19 @@ Mirroring the Azure Databricks Catalog structure in Fabric allows seamless acces
 
 4. When the **New Source** dialog appears, select the **New Connection** radio button.
 
-5. In the **VM** environment open the **File explorer**, navigate to the **Downloads** folder and locate the **ConnectionDetails.txt** file. Open the file and copy the **Service Principal ID** and **Service Principal Key**.
-6. After you have copied the **Service Principal ID** and **Service Principal Key**, navigate back to Microsoft Fabric and enter connection details by using the values in the table below. Make sure to leave all other settings at their default values.
+5. In the **VM** environment navigate to the **Desktop** and locate the **ADB Connection Details.txt** file. Open the file and copy the **URL**, **Tenant ID**, **Service Principal ID** and **Service Principal Key**.
+
+    ![Screenshot showing the ADB Connection Details.txt file in the VM environment](media/adb-connection-details-file.png)
+
+6. After you have copied these credentials, navigate back to Microsoft Fabric and enter connection details by using the table below as guidance. Make sure to leave all other settings at their default values.
 
     | Setting         | Value                                    |
     |--------------------|------------------------------------------|
-    | Url               | `https://adb-2564561755692971.11.azuredatabricks.net`         |
+    | Url               | Paste the copied URL here (in Fabric)               |
     | Authentication Kind    | **Service Principal** |
-    | Service principal client ID | Paste the copied Service Principal ID here          |
-    | Service principal key              | Paste the copied Service Principal Key here                   |
+    | Tenant ID                      | Paste the copied Tenant ID here (in Fabric)                  |
+    | Service principal client ID | Paste the copied Service Principal ID here (in Fabric)          |
+    | Service principal key              | Paste the copied Service Principal Key here (in Fabric)                   |
 
 7. Select **Connect** then select **Next**.
 
