@@ -2,7 +2,7 @@
 
 ## Task 4.1: Create a Mirrored Azure Databricks Catalog in Fabric and analyze data using T-SQL
 
-Mirroring the Azure Databricks Catalog structure in Fabric allows seamless access to the underlying catalog data through shortcuts. This means that any changes made to the data are instantly reflected in Fabric, without the need for data movement or replication. Let’s step into Data Engineer, Eva’s shoes to create a Mirrored Azure Databricks Catalog and analyze the data using T-SQL. 
+Mirroring the Azure Databricks Catalog structure in Fabric allows seamless access to the underlying catalog data through shortcuts. This means that any changes made to the data are instantly reflected in Fabric, without the need for data movement or replication. Let’s step into Data Engineer, Eva’s shoes to create a Mirrored Azure Databricks Catalog and analyze the data using T-SQL.
 
 1. Navigate back to Microsoft Fabric tab on your browser (`https://app.fabric.microsoft.com`)
 

@@ -6,31 +6,40 @@ This exercise shows how Microsoft Fabric with Azure Databricks enabled Zava to s
 
 Delta Live Tables (DLT) allow you to build and manage reliable data pipelines that deliver high-quality data in Lakehouse. DLT helps data engineering teams simplify ETL development and management with declarative pipeline development, automatic data testing, and deep visibility for monitoring and recovery.
 
-1. Open a new tab in your VM browser and sign in to the Azure Databricks Workspace, by navigating to this url: `https://@lab.Variable(workspaceurl)`.
+1. Open a new tab in your VM browser and navigate to `https://portal.azure.com/` then sign in using the credentials provided for this lab.
+2. In the Azure portal, search for `rg-build25-@lab.LabInstance.Id`. Select the resource group from the search results.
 
-2. Click on the **Sign in with Microsoft Entra ID**.
+    ![Screenshot showing how to search for a resource group in Azure Portal](media/azure-portal-search-rg.png)
+
+3. In your resource group search for `adb-build-25-@lab.LabInstance.Id` and select the Azure Databricks workspace from the search results.
+
+4. Select the **Launch Workspace** button to open the Azure Databricks workspace.
+
+    ![Screenshot showing how to launch the Azure Databricks workspace](media/azure-databricks-launch-workspace.png)
+
+5. Click on the **Sign in with Microsoft Entra ID**.
 
     ![Screenshot showing the sign in with Microsoft Entra ID option in Azure Databricks](media/databricks-signin.png)
 
-3. On the left navigation pane, select **Jobs and pipelines**.
+6. On the left navigation pane, select **Jobs and pipelines**.
 
-4. Select the **Create** dropdown and choose **ETL Pipeline**.
+7. Select the **Create** dropdown and choose **ETL Pipeline**.
 
     ![Screenshot showing the create ETL pipeline option in Azure Databricks](media/databricks-createetl.png)
 
-5. In the **Create ETL Pipeline** page, provide a name for your pipeline as `DLT_Pipeline`, scroll down to **Paths** and select the folder icon to browse the notebook.
+8. In the **Create ETL Pipeline** page, provide a name for your pipeline as `DLT_Pipeline`, scroll down to **Paths** and select the folder icon to browse the notebook.
 
     ![Screenshot showing the create ETL pipeline page in Azure Databricks](media/databricks-etl-details.png)
 
-6. In the **Select file** dialog, select **Shared**, select **Analytics with ADB**, select **01 DLT Notebook** and then click on the **Select** button.
+9. In the **Select file** dialog, select **Shared**, select **Analytics with ADB**, select **01 DLT Notebook** and then click on the **Select** button.
 
     ![Screenshot showing the selection of the 01 DLT Notebook in Azure Databricks](media/databricks-select-file.png)
 
-7. In the **Destination** section, enter `dbo` as the **Default Schema** then select **Create**.
+10. In the **Destination** section, enter `dbo` as the **Default Schema** then select **Create**.
 
     ![Screenshot showing the destination selection for the pipeline in Azure Databricks](media/databricks-elt-destination.png)
 
-8. Select **Start** to begin the pipeline execution.
+11. Select **Start** to begin the pipeline execution.
 
     ![Screenshot showing the DLT pipeline start button in Azure Databricks](media/databricks-elt-pipeline-start.png)
 

@@ -12,7 +12,7 @@ In this exercise, you will act as the Data Engineer, Bryan, to transfer Zava's d
 2. When prompted, sign in using the following credentials:
 
     * **Email**: `@lab.CloudPortalCredential(User1).Username`
-    * **Password**: `@lab.CloudPortalCredential(User1).Password`
+    * **TAP**: `@lab.CloudPortalCredential(User1).AccessToken`
 
 3. If prompted to stay signed in, select **Yes**.
 
