@@ -7,7 +7,7 @@ This exercise shows how Microsoft Fabric with Azure Databricks enabled Zava to s
 Delta Live Tables (DLT) allow you to build and manage reliable data pipelines that deliver high-quality data in Lakehouse. DLT helps data engineering teams simplify ETL development and management with declarative pipeline development, automatic data testing, and deep visibility for monitoring and recovery.
 
 1. Open a new tab in your VM browser and navigate to `https://portal.azure.com/` then sign in using the credentials provided for this lab.
-2. In the Azure portal, search for `rg-build25-@lab.LabInstance.Id`. Select the resource group from the search results.
+2. In the Azure portal, search for `rg-build-@lab.LabInstance.Id`. Select the resource group from the search results.
 
     ![Screenshot showing how to search for a resource group in Azure Portal](media/azure-portal-search-rg.png)
 
